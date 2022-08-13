@@ -153,20 +153,39 @@ repositories {
     // flatDir {
     //     dir 'libs'
     // }
-    maven { url 'https://maven.blamejared.com' }
     //maven { url "https://cursemaven.com" }
-    maven { url "https://maven.blamejared.com"}
+    maven { url "https://maven.blamejared.com"} //hexcasting, patchouli, paucal APIS are here
+    repositories {
+        maven {
+            // location of the maven that hosts JEI files
+            name = "Progwml6 maven"
+            url = "https://dvs1.progwml6.com/files/maven/"
+        }
+        maven {
+            // location of a maven mirror for JEI files, as a fallback
+            name = "ModMaven"
+            url = "https://modmaven.dev"
+        }
+    }
+    maven { url "https://maven.theillusivec4.top/"} //curious
+    maven { url "https://jitpack.io" }
 }
 
 dependencies {
     minecraft 'net.minecraftforge:forge:1.18.2-40.1.73'
 
     implementation fg.deobf("at.petra-k.hexcasting:hexcasting-forge-1.18.2:0.9.2-pre-376")
+    implementation fg.deobf("at.petra-k.paucal:paucal-forge-1.18.2:0.4.7")
+    implementation fg.deobf("com.github.Virtuoel:Pehkui:3.3.2-1.18.2-forge")
 
+
+    // compile against the JEI API but do not include it at runtime
+    compileOnly fg.deobf("mezz.jei:jei-1.18.2:9.5.3.143:api")
     compileOnly fg.deobf("vazkii.patchouli:Patchouli:1.18.2-71.1:api")
 
+    // at runtime, use the full JEI jar
+    runtimeOnly fg.deobf("mezz.jei:jei-1.18.2:9.5.3.143")
     runtimeOnly fg.deobf("vazkii.patchouli:Patchouli:1.18.2-71.1")
-    runtimeOnly fg.deobf("at.petra-k.paucal:paucal-forge-1.18.2:0.4.7")
 
 }
 
