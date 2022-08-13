@@ -1,0 +1,1 @@
+/home/walksanator/git/minecraft/mods/ritual/ritualhex/build/classes/java/main/me/walksanator/RitualHex/RitualHex.class

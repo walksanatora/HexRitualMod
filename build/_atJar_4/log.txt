@@ -1,0 +1,7 @@
+Java Launcher: /usr/lib/jvm/java-17-openjdk-amd64/bin/java
+Arguments: '--inJar, /home/walksanator/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.18.2-40.1.73/forge-1.18.2-40.1.73-injected.jar, --outJar, /home/walksanator/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.18.2-40.1.73_mapped_parchment_2022.03.13-1.18.2/forge-1.18.2-40.1.73_mapped_parchment_2022.03.13-1.18.2.jar, --logFile, accesstransform.log, --atFile, /home/walksanator/git/minecraft/mods/ritual/ritualhex/build/_atJar_4/parent_at.cfg'
+Classpath:
+ - /home/walksanator/.gradle/caches/forge_gradle/maven_downloader/net/minecraftforge/accesstransformers/8.0.7/accesstransformers-8.0.7-fatjar.jar
+Working directory: /home/walksanator/git/minecraft/mods/ritual/ritualhex/build/_atJar_4
+Main class: net.minecraftforge.accesstransformer.TransformerProcessor
+====================================

@@ -1,0 +1,15 @@
+Java Launcher: /usr/lib/jvm/java-17-openjdk-amd64/bin/java
+Arguments: '--task, SRG_TO_MCP, --input, /home/walksanator/.gradle/caches/modules-2/files-2.1/curse.maven/paucal-597824/3829999/5c2ab1ae034a85719b82a96631baadeb9b647cd8/paucal-597824-3829999.jar, --output, /home/walksanator/.gradle/caches/forge_gradle/deobf_dependencies/curse/maven/paucal-597824/3829999_mapped_parchment_2022.03.13-1.18.2/paucal-597824-3829999_mapped_parchment_2022.03.13-1.18.2.jar, --mcp, /home/walksanator/.gradle/caches/parchmentgradle/org/parchmentmc/data/parchment-1.18.2/2022.03.13/parchment-1.18.2-2022.03.13.zip, --strip-signatures'
+Classpath:
+ - /home/walksanator/.gradle/caches/forge_gradle/maven_downloader/net/minecraftforge/installertools/1.3.2/installertools-1.3.2-fatjar.jar
+Working directory: /home/walksanator/git/minecraft/mods/ritual/ritualhex/build/_RenameSrg2Mcp_548603907
+Main class: net.minecraftforge.installertools.ConsoleTool
+====================================
+Task: SRG_TO_MCP
+Input:  /home/walksanator/.gradle/caches/modules-2/files-2.1/curse.maven/paucal-597824/3829999/5c2ab1ae034a85719b82a96631baadeb9b647cd8/paucal-597824-3829999.jar
+Output: /home/walksanator/.gradle/caches/forge_gradle/deobf_dependencies/curse/maven/paucal-597824/3829999_mapped_parchment_2022.03.13-1.18.2/paucal-597824-3829999_mapped_parchment_2022.03.13-1.18.2.jar
+MCP:    /home/walksanator/.gradle/caches/parchmentgradle/org/parchmentmc/data/parchment-1.18.2/2022.03.13/parchment-1.18.2-2022.03.13.zip
+Loading MCP Data
+Processing ZIP file
+Stripped Manifest of sha digests
+Process complete
