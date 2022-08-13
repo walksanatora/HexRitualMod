@@ -50,6 +50,6 @@ What if you wanted to perform rituals to try and get more items
     side="BOTH"
 
 [[dependencies.ritualhex]]
-    modId="hexmod"
+    modId="hexcasting"
     mandatory=true
     VersionRange="[0,9)"
