@@ -154,20 +154,20 @@ repositories {
     //     dir 'libs'
     // }
     maven { url 'https://maven.blamejared.com' }
-    maven {
-        url "https://cursemaven.com"
-    }
+    //maven { url "https://cursemaven.com" }
+    maven { url "https://maven.blamejared.com"}
 }
 
 dependencies {
     minecraft 'net.minecraftforge:forge:1.18.2-40.1.73'
 
-    compileOnly fg.deobf(files('../HexMod/Forge/build/libs/hexcasting-forge-1.18.2-0.9.2.jar'))
+    implementation fg.deobf("at.petra-k.hexcasting:hexcasting-forge-1.18.2:0.9.2-pre-376")
+
     compileOnly fg.deobf("vazkii.patchouli:Patchouli:1.18.2-71.1:api")
 
-    runtimeOnly fg.deobf(files('../HexMod/Forge/build/libs/hexcasting-forge-1.18.2-0.9.2.jar'))
     runtimeOnly fg.deobf("vazkii.patchouli:Patchouli:1.18.2-71.1")
-    runtimeOnly fg.deobf("curse.maven:paucal-597824:3831430")
+    runtimeOnly fg.deobf("at.petra-k.paucal:paucal-forge-1.18.2:0.4.7")
+
 }
 
 // Example for how to get properties into the manifest for reading at runtime.
