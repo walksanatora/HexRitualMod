@@ -9,6 +9,7 @@ import net.minecraft.server.level.ServerPlayer
 
 object OpAmogus : SpellOperator {
     override val argc = 0
+    override val isGreat = true
     override fun execute(args: List<SpellDatum<*>>, ctx: CastingContext): Triple<RenderedSpell, Int, List<ParticleSpray>> {
         return Triple(
             Spell(),
