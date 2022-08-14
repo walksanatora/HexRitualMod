@@ -1,17 +1,17 @@
 Java Launcher: /usr/lib/jvm/java-17-openjdk-amd64/bin/java
-Arguments: '--clean, /home/walksanator/.gradle/caches/forge_gradle/mcp_repo/net/minecraft/joined/1.18.2-20220404.173914/joined-1.18.2-20220404.173914-srg.jar, --output, /home/walksanator/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.18.2-40.1.73/forge-1.18.2-40.1.73-binpatched.jar, --apply, /home/walksanator/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.18.2-40.1.73/forge-1.18.2-40.1.73-binpatches.lzma'
+Arguments: '--clean, /home/walksanator/.gradle/caches/forge_gradle/mcp_repo/net/minecraft/joined/1.18.2-20220228.144236/joined-1.18.2-20220228.144236-srg.jar, --output, /home/walksanator/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.18.2-40.0.4/forge-1.18.2-40.0.4-binpatched.jar, --apply, /home/walksanator/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.18.2-40.0.4/forge-1.18.2-40.0.4-binpatches.lzma'
 Classpath:
  - /home/walksanator/.gradle/caches/forge_gradle/maven_downloader/net/minecraftforge/binarypatcher/1.0.12/binarypatcher-1.0.12-fatjar.jar
-Working directory: /home/walksanator/git/minecraft/mods/ritual/ritualhex/build/_applyBinpatches_2
+Working directory: /home/walksanator/git/minecraft/mods/ritual/ritualkt/build/_applyBinpatches_2
 Main class: net.minecraftforge.binarypatcher.ConsoleTool
 ====================================
 Applying: 
-  Clean:     /home/walksanator/.gradle/caches/forge_gradle/mcp_repo/net/minecraft/joined/1.18.2-20220404.173914/joined-1.18.2-20220404.173914-srg.jar
-  Output:    /home/walksanator/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.18.2-40.1.73/forge-1.18.2-40.1.73-binpatched.jar
+  Clean:     /home/walksanator/.gradle/caches/forge_gradle/mcp_repo/net/minecraft/joined/1.18.2-20220228.144236/joined-1.18.2-20220228.144236-srg.jar
+  Output:    /home/walksanator/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.18.2-40.0.4/forge-1.18.2-40.0.4-binpatched.jar
   KeepData:  false
   Unpatched: false
-  Patches:   /home/walksanator/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.18.2-40.1.73/forge-1.18.2-40.1.73-binpatches.lzma
-Loading patches file: /home/walksanator/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.18.2-40.1.73/forge-1.18.2-40.1.73-binpatches.lzma
+  Patches:   /home/walksanator/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.18.2-40.0.4/forge-1.18.2-40.0.4-binpatches.lzma
+Loading patches file: /home/walksanator/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.18.2-40.0.4/forge-1.18.2-40.0.4-binpatches.lzma
   Reading patch com.mojang.blaze3d.pipeline.RenderTarget.binpatch
     Checksum: c9bb7d14 Exists: true
   Reading patch com.mojang.blaze3d.platform.GlStateManager$BlendState.binpatch
@@ -58,8 +58,6 @@ Loading patches file: /home/walksanator/.gradle/caches/forge_gradle/minecraft_us
     Checksum: e6536655 Exists: true
   Reading patch com.mojang.blaze3d.vertex.BufferBuilder.binpatch
     Checksum: 32f26304 Exists: true
-  Reading patch com.mojang.blaze3d.vertex.SheetedDecalTextureGenerator.binpatch
-    Checksum: 13163170 Exists: true
   Reading patch com.mojang.blaze3d.vertex.VertexConsumer.binpatch
     Checksum: c5adabbd Exists: true
   Reading patch com.mojang.blaze3d.vertex.VertexFormat$1.binpatch
@@ -80,12 +78,6 @@ Loading patches file: /home/walksanator/.gradle/caches/forge_gradle/minecraft_us
     Checksum: 5c524ef8 Exists: true
   Reading patch com.mojang.blaze3d.vertex.VertexFormatElement.binpatch
     Checksum: 26e7dbdb Exists: true
-  Reading patch com.mojang.blaze3d.vertex.VertexMultiConsumer$Double.binpatch
-    Checksum: f5f7b772 Exists: true
-  Reading patch com.mojang.blaze3d.vertex.VertexMultiConsumer$Multiple.binpatch
-    Checksum: 3f48205b Exists: true
-  Reading patch com.mojang.blaze3d.vertex.VertexMultiConsumer.binpatch
-    Checksum: 48bbec47 Exists: true
   Reading patch com.mojang.math.Matrix3f.binpatch
     Checksum: 24c8162f Exists: true
   Reading patch com.mojang.math.Matrix4f.binpatch
@@ -158,8 +150,6 @@ Loading patches file: /home/walksanator/.gradle/caches/forge_gradle/minecraft_us
     Checksum: 414196ec Exists: true
   Reading patch net.minecraft.client.ClientBrandRetriever.binpatch
     Checksum: e20cbb90 Exists: true
-  Reading patch net.minecraft.client.ClientRecipeBook.binpatch
-    Checksum: bdc766bb Exists: true
   Reading patch net.minecraft.client.KeyMapping.binpatch
     Checksum: 4ca9d9f Exists: true
   Reading patch net.minecraft.client.KeyboardHandler$1.binpatch
@@ -196,10 +186,6 @@ Loading patches file: /home/walksanator/.gradle/caches/forge_gradle/minecraft_us
     Checksum: b86972ed Exists: true
   Reading patch net.minecraft.client.Options.binpatch
     Checksum: bbdc4fe5 Exists: true
-  Reading patch net.minecraft.client.RecipeBookCategories$1.binpatch
-    Checksum: d54e0a51 Exists: true
-  Reading patch net.minecraft.client.RecipeBookCategories.binpatch
-    Checksum: 6269007f Exists: true
   Reading patch net.minecraft.client.Screenshot.binpatch
     Checksum: 79ffdd5c Exists: true
   Reading patch net.minecraft.client.ToggleKeyMapping.binpatch
@@ -298,8 +284,6 @@ Loading patches file: /home/walksanator/.gradle/caches/forge_gradle/minecraft_us
     Checksum: b3e59fcf Exists: true
   Reading patch net.minecraft.client.gui.screens.inventory.EnchantmentScreen.binpatch
     Checksum: 3da15c6b Exists: true
-  Reading patch net.minecraft.client.gui.screens.inventory.LoomScreen.binpatch
-    Checksum: 9c8cd570 Exists: true
   Reading patch net.minecraft.client.gui.screens.inventory.tooltip.ClientTooltipComponent.binpatch
     Checksum: 80e333d7 Exists: true
   Reading patch net.minecraft.client.gui.screens.multiplayer.JoinMultiplayerScreen.binpatch
@@ -360,10 +344,6 @@ Loading patches file: /home/walksanator/.gradle/caches/forge_gradle/minecraft_us
     Checksum: a0ded5fe Exists: true
   Reading patch net.minecraft.client.gui.screens.worldselection.WorldPreset.binpatch
     Checksum: 38169ad4 Exists: true
-  Reading patch net.minecraft.client.gui.screens.worldselection.WorldSelectionList$WorldListEntry.binpatch
-    Checksum: 532c697a Exists: true
-  Reading patch net.minecraft.client.gui.screens.worldselection.WorldSelectionList.binpatch
-    Checksum: b7dc9217 Exists: true
   Reading patch net.minecraft.client.main.Main$1.binpatch
     Checksum: 4e74f67b Exists: true
   Reading patch net.minecraft.client.main.Main$2.binpatch
@@ -476,10 +456,6 @@ Loading patches file: /home/walksanator/.gradle/caches/forge_gradle/minecraft_us
     Checksum: 170b6593 Exists: true
   Reading patch net.minecraft.client.renderer.LightTexture.binpatch
     Checksum: ee5e33a3 Exists: true
-  Reading patch net.minecraft.client.renderer.OutlineBufferSource$EntityOutlineGenerator.binpatch
-    Checksum: 4777bf2c Exists: true
-  Reading patch net.minecraft.client.renderer.OutlineBufferSource.binpatch
-    Checksum: d487418 Exists: true
   Reading patch net.minecraft.client.renderer.PostChain.binpatch
     Checksum: 5072a769 Exists: true
   Reading patch net.minecraft.client.renderer.RenderType$CompositeRenderType.binpatch
@@ -502,8 +478,6 @@ Loading patches file: /home/walksanator/.gradle/caches/forge_gradle/minecraft_us
     Checksum: aa77036b Exists: true
   Reading patch net.minecraft.client.renderer.Sheets.binpatch
     Checksum: bf55eaf4 Exists: true
-  Reading patch net.minecraft.client.renderer.SpriteCoordinateExpander.binpatch
-    Checksum: 52a398b5 Exists: true
   Reading patch net.minecraft.client.renderer.block.BlockModelShaper.binpatch
     Checksum: 8061d75c Exists: true
   Reading patch net.minecraft.client.renderer.block.BlockRenderDispatcher$1.binpatch
@@ -582,8 +556,6 @@ Loading patches file: /home/walksanator/.gradle/caches/forge_gradle/minecraft_us
     Checksum: 3c2b25be Exists: true
   Reading patch net.minecraft.client.renderer.blockentity.PistonHeadRenderer.binpatch
     Checksum: 5027eedf Exists: true
-  Reading patch net.minecraft.client.renderer.blockentity.SkullBlockRenderer.binpatch
-    Checksum: 12235fff Exists: true
   Reading patch net.minecraft.client.renderer.chunk.ChunkRenderDispatcher$ChunkTaskResult.binpatch
     Checksum: 9955d0a8 Exists: true
   Reading patch net.minecraft.client.renderer.chunk.ChunkRenderDispatcher$CompiledChunk$1.binpatch
@@ -636,8 +608,6 @@ Loading patches file: /home/walksanator/.gradle/caches/forge_gradle/minecraft_us
     Checksum: 1edcd15a Exists: true
   Reading patch net.minecraft.client.renderer.texture.AbstractTexture.binpatch
     Checksum: 2197e6ac Exists: true
-  Reading patch net.minecraft.client.renderer.texture.MipmapGenerator.binpatch
-    Checksum: 85af99c6 Exists: true
   Reading patch net.minecraft.client.renderer.texture.Stitcher$Holder.binpatch
     Checksum: 6b5adf85 Exists: true
   Reading patch net.minecraft.client.renderer.texture.Stitcher$Region.binpatch
@@ -694,20 +664,8 @@ Loading patches file: /home/walksanator/.gradle/caches/forge_gradle/minecraft_us
     Checksum: 78e55d5d Exists: true
   Reading patch net.minecraft.client.resources.model.WeightedBakedModel.binpatch
     Checksum: f6ab999e Exists: true
-  Reading patch net.minecraft.client.resources.sounds.SoundInstance$Attenuation.binpatch
-    Checksum: 3034ac7c Exists: true
-  Reading patch net.minecraft.client.resources.sounds.SoundInstance.binpatch
-    Checksum: c71d6165 Exists: true
   Reading patch net.minecraft.client.server.IntegratedServer.binpatch
     Checksum: e41a951 Exists: true
-  Reading patch net.minecraft.client.server.LanServerDetection$LanServerDetector.binpatch
-    Checksum: b2383a0f Exists: true
-  Reading patch net.minecraft.client.server.LanServerDetection$LanServerList.binpatch
-    Checksum: ec4b1410 Exists: true
-  Reading patch net.minecraft.client.server.LanServerDetection.binpatch
-    Checksum: 4b9a21d5 Exists: true
-  Reading patch net.minecraft.client.server.LanServerPinger.binpatch
-    Checksum: 20bc6cef Exists: true
   Reading patch net.minecraft.client.sounds.SoundEngine$DeviceCheckState.binpatch
     Checksum: 2e17a5a0 Exists: true
   Reading patch net.minecraft.client.sounds.SoundEngine.binpatch
@@ -734,6 +692,22 @@ Loading patches file: /home/walksanator/.gradle/caches/forge_gradle/minecraft_us
     Checksum: da647962 Exists: true
   Reading patch net.minecraft.commands.synchronization.ArgumentTypes.binpatch
     Checksum: 913496cb Exists: true
+  Reading patch net.minecraft.core.Direction$1.binpatch
+    Checksum: 4b2713ad Exists: true
+  Reading patch net.minecraft.core.Direction$Axis$1.binpatch
+    Checksum: 44e4dbf5 Exists: true
+  Reading patch net.minecraft.core.Direction$Axis$2.binpatch
+    Checksum: ca6dbf1 Exists: true
+  Reading patch net.minecraft.core.Direction$Axis$3.binpatch
+    Checksum: 2007dc24 Exists: true
+  Reading patch net.minecraft.core.Direction$Axis.binpatch
+    Checksum: 812b431f Exists: true
+  Reading patch net.minecraft.core.Direction$AxisDirection.binpatch
+    Checksum: 8a61c780 Exists: true
+  Reading patch net.minecraft.core.Direction$Plane.binpatch
+    Checksum: afd5472c Exists: true
+  Reading patch net.minecraft.core.Direction.binpatch
+    Checksum: 6dbd7176 Exists: true
   Reading patch net.minecraft.core.Holder$Direct.binpatch
     Checksum: 27d51365 Exists: true
   Reading patch net.minecraft.core.Holder$Kind.binpatch
@@ -864,12 +838,8 @@ Loading patches file: /home/walksanator/.gradle/caches/forge_gradle/minecraft_us
     Checksum: 439aa56d Exists: true
   Reading patch net.minecraft.data.recipes.RecipeProvider.binpatch
     Checksum: 6715571c Exists: true
-  Reading patch net.minecraft.data.tags.BiomeTagsProvider.binpatch
-    Checksum: c8417f93 Exists: true
   Reading patch net.minecraft.data.tags.BlockTagsProvider.binpatch
     Checksum: f67dea8c Exists: true
-  Reading patch net.minecraft.data.tags.ConfiguredStructureTagsProvider.binpatch
-    Checksum: b60e71b7 Exists: true
   Reading patch net.minecraft.data.tags.EntityTypeTagsProvider.binpatch
     Checksum: f48db37b Exists: true
   Reading patch net.minecraft.data.tags.FluidTagsProvider.binpatch
@@ -938,8 +908,16 @@ Loading patches file: /home/walksanator/.gradle/caches/forge_gradle/minecraft_us
     Checksum: d788bd79 Exists: true
   Reading patch net.minecraft.network.chat.TranslatableComponent.binpatch
     Checksum: 7ed44095 Exists: true
+  Reading patch net.minecraft.network.protocol.game.ClientboundCommandsPacket$Entry.binpatch
+    Checksum: a9984a51 Exists: true
+  Reading patch net.minecraft.network.protocol.game.ClientboundCommandsPacket.binpatch
+    Checksum: 1802d69d Exists: true
   Reading patch net.minecraft.network.protocol.game.ClientboundCustomPayloadPacket.binpatch
     Checksum: 9f68aa95 Exists: true
+  Reading patch net.minecraft.network.protocol.game.ClientboundUpdateAttributesPacket$AttributeSnapshot.binpatch
+    Checksum: 1decead2 Exists: true
+  Reading patch net.minecraft.network.protocol.game.ClientboundUpdateAttributesPacket.binpatch
+    Checksum: 432a067e Exists: true
   Reading patch net.minecraft.network.protocol.game.ServerboundContainerClickPacket.binpatch
     Checksum: 6d42959f Exists: true
   Reading patch net.minecraft.network.protocol.game.ServerboundCustomPayloadPacket.binpatch
@@ -1178,28 +1156,22 @@ Loading patches file: /home/walksanator/.gradle/caches/forge_gradle/minecraft_us
     Checksum: fa30074a Exists: true
   Reading patch net.minecraft.server.packs.VanillaPackResources.binpatch
     Checksum: 7bc7990e Exists: true
-  Reading patch net.minecraft.server.packs.metadata.pack.PackMetadataSection.binpatch
-    Checksum: aa74f68e Exists: true
-  Reading patch net.minecraft.server.packs.metadata.pack.PackMetadataSectionSerializer.binpatch
-    Checksum: ef9065f0 Exists: true
   Reading patch net.minecraft.server.packs.repository.Pack$PackConstructor.binpatch
     Checksum: f69abddd Exists: true
   Reading patch net.minecraft.server.packs.repository.Pack$Position.binpatch
     Checksum: 9f791744 Exists: true
   Reading patch net.minecraft.server.packs.repository.Pack.binpatch
     Checksum: 5afad686 Exists: true
-  Reading patch net.minecraft.server.packs.repository.PackCompatibility.binpatch
-    Checksum: 4f20184f Exists: true
   Reading patch net.minecraft.server.packs.repository.PackRepository.binpatch
     Checksum: b7f207ec Exists: true
   Reading patch net.minecraft.server.packs.resources.FallbackResourceManager$LeakedResourceWarningInputStream.binpatch
     Checksum: 5af293f3 Exists: true
   Reading patch net.minecraft.server.packs.resources.FallbackResourceManager.binpatch
     Checksum: 88feac7b Exists: true
-  Reading patch net.minecraft.server.packs.resources.MultiPackResourceManager.binpatch
-    Checksum: be60c93a Exists: true
-  Reading patch net.minecraft.server.packs.resources.ReloadableResourceManager.binpatch
-    Checksum: 5794dc5 Exists: true
+  Reading patch net.minecraft.server.packs.resources.ResourceManager$Empty.binpatch
+    Checksum: 2e6df44b Exists: true
+  Reading patch net.minecraft.server.packs.resources.ResourceManager.binpatch
+    Checksum: 1600a01a Exists: true
   Reading patch net.minecraft.server.packs.resources.SimpleJsonResourceReloadListener.binpatch
     Checksum: 2fe376fc Exists: true
   Reading patch net.minecraft.server.players.PlayerList$1.binpatch
@@ -1214,10 +1186,6 @@ Loading patches file: /home/walksanator/.gradle/caches/forge_gradle/minecraft_us
     Checksum: 86f31928 Exists: true
   Reading patch net.minecraft.sounds.SoundEvents.binpatch
     Checksum: d591a5b9 Exists: true
-  Reading patch net.minecraft.stats.RecipeBookSettings$TypeSettings.binpatch
-    Checksum: 86ee8259 Exists: true
-  Reading patch net.minecraft.stats.RecipeBookSettings.binpatch
-    Checksum: fd98b3b6 Exists: true
   Reading patch net.minecraft.stats.StatType.binpatch
     Checksum: fc3167ed Exists: true
   Reading patch net.minecraft.tags.BlockTags.binpatch
@@ -1248,12 +1216,10 @@ Loading patches file: /home/walksanator/.gradle/caches/forge_gradle/minecraft_us
     Checksum: cda31c4f Exists: true
   Reading patch net.minecraft.tags.TagManager.binpatch
     Checksum: 28134481 Exists: true
-  Reading patch net.minecraft.util.datafix.fixes.StructuresBecomeConfiguredFix$Conversion.binpatch
-    Checksum: e0caf627 Exists: true
-  Reading patch net.minecraft.util.datafix.fixes.StructuresBecomeConfiguredFix.binpatch
-    Checksum: be74cd47 Exists: true
   Reading patch net.minecraft.world.effect.MobEffect.binpatch
     Checksum: b5e9398f Exists: true
+  Reading patch net.minecraft.world.effect.MobEffectCategory.binpatch
+    Checksum: 5bdda538 Exists: true
   Reading patch net.minecraft.world.effect.MobEffectInstance.binpatch
     Checksum: 39bef9 Exists: true
   Reading patch net.minecraft.world.effect.MobEffects$1.binpatch
@@ -1322,10 +1288,6 @@ Loading patches file: /home/walksanator/.gradle/caches/forge_gradle/minecraft_us
     Checksum: 1e923116 Exists: true
   Reading patch net.minecraft.world.entity.ai.behavior.HarvestFarmland.binpatch
     Checksum: 9d85df1 Exists: true
-  Reading patch net.minecraft.world.entity.ai.control.MoveControl$Operation.binpatch
-    Checksum: c6878c76 Exists: true
-  Reading patch net.minecraft.world.entity.ai.control.MoveControl.binpatch
-    Checksum: 620eab64 Exists: true
   Reading patch net.minecraft.world.entity.ai.goal.BreakDoorGoal.binpatch
     Checksum: 2f4de9c8 Exists: true
   Reading patch net.minecraft.world.entity.ai.goal.EatBlockGoal.binpatch
@@ -1558,8 +1520,6 @@ Loading patches file: /home/walksanator/.gradle/caches/forge_gradle/minecraft_us
     Checksum: 78858c39 Exists: true
   Reading patch net.minecraft.world.entity.monster.MagmaCube.binpatch
     Checksum: a913c9ef Exists: true
-  Reading patch net.minecraft.world.entity.monster.Monster.binpatch
-    Checksum: 7f21454a Exists: true
   Reading patch net.minecraft.world.entity.monster.Pillager.binpatch
     Checksum: d0c812e4 Exists: true
   Reading patch net.minecraft.world.entity.monster.Ravager$RavagerMeleeAttackGoal.binpatch
@@ -1722,8 +1682,6 @@ Loading patches file: /home/walksanator/.gradle/caches/forge_gradle/minecraft_us
     Checksum: 9ad929f3 Exists: true
   Reading patch net.minecraft.world.entity.vehicle.MinecartSpawner.binpatch
     Checksum: 99587c3c Exists: true
-  Reading patch net.minecraft.world.food.FoodData.binpatch
-    Checksum: b09c7ea1 Exists: true
   Reading patch net.minecraft.world.food.FoodProperties$Builder.binpatch
     Checksum: ab463132 Exists: true
   Reading patch net.minecraft.world.food.FoodProperties.binpatch
@@ -1778,28 +1736,12 @@ Loading patches file: /home/walksanator/.gradle/caches/forge_gradle/minecraft_us
     Checksum: d6afb208 Exists: true
   Reading patch net.minecraft.world.inventory.InventoryMenu.binpatch
     Checksum: 6c4dd3fd Exists: true
-  Reading patch net.minecraft.world.inventory.LoomMenu$1.binpatch
-    Checksum: ed86de84 Exists: true
-  Reading patch net.minecraft.world.inventory.LoomMenu$2.binpatch
-    Checksum: bd41c83a Exists: true
-  Reading patch net.minecraft.world.inventory.LoomMenu$3.binpatch
-    Checksum: 1f316847 Exists: true
-  Reading patch net.minecraft.world.inventory.LoomMenu$4.binpatch
-    Checksum: effb6728 Exists: true
-  Reading patch net.minecraft.world.inventory.LoomMenu$5.binpatch
-    Checksum: 97b6b5a Exists: true
-  Reading patch net.minecraft.world.inventory.LoomMenu$6.binpatch
-    Checksum: 484c4af1 Exists: true
-  Reading patch net.minecraft.world.inventory.LoomMenu.binpatch
-    Checksum: 62e1a237 Exists: true
   Reading patch net.minecraft.world.inventory.MenuType$MenuSupplier.binpatch
     Checksum: c131b8ed Exists: true
   Reading patch net.minecraft.world.inventory.MenuType.binpatch
     Checksum: f20724a Exists: true
   Reading patch net.minecraft.world.inventory.RecipeBookMenu.binpatch
     Checksum: 524e6281 Exists: true
-  Reading patch net.minecraft.world.inventory.RecipeBookType.binpatch
-    Checksum: e79540e0 Exists: true
   Reading patch net.minecraft.world.inventory.ResultSlot.binpatch
     Checksum: 20d9002b Exists: true
   Reading patch net.minecraft.world.inventory.Slot.binpatch
@@ -1812,8 +1754,6 @@ Loading patches file: /home/walksanator/.gradle/caches/forge_gradle/minecraft_us
     Checksum: bcd7d4a Exists: true
   Reading patch net.minecraft.world.item.AxeItem.binpatch
     Checksum: 7eb0b3b5 Exists: true
-  Reading patch net.minecraft.world.item.BannerItem.binpatch
-    Checksum: 7d77c2e2 Exists: true
   Reading patch net.minecraft.world.item.BlockItem.binpatch
     Checksum: 2410cc7f Exists: true
   Reading patch net.minecraft.world.item.BoneMealItem.binpatch
@@ -1850,8 +1790,6 @@ Loading patches file: /home/walksanator/.gradle/caches/forge_gradle/minecraft_us
     Checksum: b604d7a0 Exists: true
   Reading patch net.minecraft.world.item.CreativeModeTab.binpatch
     Checksum: 9e163eb5 Exists: true
-  Reading patch net.minecraft.world.item.CrossbowItem.binpatch
-    Checksum: e5089123 Exists: true
   Reading patch net.minecraft.world.item.DiggerItem.binpatch
     Checksum: 300f5dbe Exists: true
   Reading patch net.minecraft.world.item.DyeColor.binpatch
@@ -1904,8 +1842,6 @@ Loading patches file: /home/walksanator/.gradle/caches/forge_gradle/minecraft_us
     Checksum: ca98a55 Exists: true
   Reading patch net.minecraft.world.item.StandingAndWallBlockItem.binpatch
     Checksum: 82c65005 Exists: true
-  Reading patch net.minecraft.world.item.SuspiciousStewItem.binpatch
-    Checksum: 8f2f99 Exists: true
   Reading patch net.minecraft.world.item.SwordItem.binpatch
     Checksum: f883acef Exists: true
   Reading patch net.minecraft.world.item.Tier.binpatch
@@ -1918,10 +1854,24 @@ Loading patches file: /home/walksanator/.gradle/caches/forge_gradle/minecraft_us
     Checksum: f1972cfb Exists: true
   Reading patch net.minecraft.world.item.alchemy.PotionBrewing.binpatch
     Checksum: 5ddc71cb Exists: true
+  Reading patch net.minecraft.world.item.crafting.AbstractCookingRecipe.binpatch
+    Checksum: 4fd30f64 Exists: true
+  Reading patch net.minecraft.world.item.crafting.ArmorDyeRecipe.binpatch
+    Checksum: bb99dc50 Exists: true
   Reading patch net.minecraft.world.item.crafting.BannerDuplicateRecipe.binpatch
     Checksum: 16281684 Exists: true
+  Reading patch net.minecraft.world.item.crafting.BlastingRecipe.binpatch
+    Checksum: 66b351e3 Exists: true
   Reading patch net.minecraft.world.item.crafting.BookCloningRecipe.binpatch
     Checksum: af266aeb Exists: true
+  Reading patch net.minecraft.world.item.crafting.CampfireCookingRecipe.binpatch
+    Checksum: ab6a5a1b Exists: true
+  Reading patch net.minecraft.world.item.crafting.FireworkRocketRecipe.binpatch
+    Checksum: 5cfeb48c Exists: true
+  Reading patch net.minecraft.world.item.crafting.FireworkStarFadeRecipe.binpatch
+    Checksum: be8da588 Exists: true
+  Reading patch net.minecraft.world.item.crafting.FireworkStarRecipe.binpatch
+    Checksum: 76c9769e Exists: true
   Reading patch net.minecraft.world.item.crafting.Ingredient$ItemValue.binpatch
     Checksum: cc76ed23 Exists: true
   Reading patch net.minecraft.world.item.crafting.Ingredient$TagValue.binpatch
@@ -1930,6 +1880,8 @@ Loading patches file: /home/walksanator/.gradle/caches/forge_gradle/minecraft_us
     Checksum: 39f085a0 Exists: true
   Reading patch net.minecraft.world.item.crafting.Ingredient.binpatch
     Checksum: 194aabdb Exists: true
+  Reading patch net.minecraft.world.item.crafting.MapCloningRecipe.binpatch
+    Checksum: 3eda0981 Exists: true
   Reading patch net.minecraft.world.item.crafting.Recipe.binpatch
     Checksum: 6c6335c7 Exists: true
   Reading patch net.minecraft.world.item.crafting.RecipeManager.binpatch
@@ -1946,6 +1898,8 @@ Loading patches file: /home/walksanator/.gradle/caches/forge_gradle/minecraft_us
     Checksum: 693948ce Exists: true
   Reading patch net.minecraft.world.item.crafting.ShapelessRecipe.binpatch
     Checksum: cfaf95a3 Exists: true
+  Reading patch net.minecraft.world.item.crafting.ShieldDecorationRecipe.binpatch
+    Checksum: e64d75ac Exists: true
   Reading patch net.minecraft.world.item.crafting.ShulkerBoxColoring.binpatch
     Checksum: e88de7b4 Exists: true
   Reading patch net.minecraft.world.item.crafting.SimpleCookingSerializer$CookieBaker.binpatch
@@ -1960,6 +1914,16 @@ Loading patches file: /home/walksanator/.gradle/caches/forge_gradle/minecraft_us
     Checksum: 799e8024 Exists: true
   Reading patch net.minecraft.world.item.crafting.SingleItemRecipe.binpatch
     Checksum: bf37459e Exists: true
+  Reading patch net.minecraft.world.item.crafting.SmeltingRecipe.binpatch
+    Checksum: e49c51d0 Exists: true
+  Reading patch net.minecraft.world.item.crafting.SmokingRecipe.binpatch
+    Checksum: 90c050a5 Exists: true
+  Reading patch net.minecraft.world.item.crafting.StonecutterRecipe.binpatch
+    Checksum: 80d8c033 Exists: true
+  Reading patch net.minecraft.world.item.crafting.SuspiciousStewRecipe.binpatch
+    Checksum: 585e83dc Exists: true
+  Reading patch net.minecraft.world.item.crafting.TippedArrowRecipe.binpatch
+    Checksum: 96cbc092 Exists: true
   Reading patch net.minecraft.world.item.crafting.UpgradeRecipe$Serializer.binpatch
     Checksum: 218a79f5 Exists: true
   Reading patch net.minecraft.world.item.crafting.UpgradeRecipe.binpatch
@@ -2096,10 +2060,16 @@ Loading patches file: /home/walksanator/.gradle/caches/forge_gradle/minecraft_us
     Checksum: b7a7b27d Exists: true
   Reading patch net.minecraft.world.level.biome.MobSpawnSettings.binpatch
     Checksum: fbc5022d Exists: true
+  Reading patch net.minecraft.world.level.block.AbstractBannerBlock.binpatch
+    Checksum: b0301404 Exists: true
+  Reading patch net.minecraft.world.level.block.AttachedStemBlock.binpatch
+    Checksum: 979c5e72 Exists: true
   Reading patch net.minecraft.world.level.block.BambooBlock.binpatch
     Checksum: 6c2ab46b Exists: true
   Reading patch net.minecraft.world.level.block.BambooSaplingBlock.binpatch
     Checksum: a9ed443 Exists: true
+  Reading patch net.minecraft.world.level.block.BannerBlock.binpatch
+    Checksum: ab1f1475 Exists: true
   Reading patch net.minecraft.world.level.block.BaseFireBlock.binpatch
     Checksum: c7cae1c5 Exists: true
   Reading patch net.minecraft.world.level.block.BaseRailBlock$1.binpatch
@@ -2108,6 +2078,12 @@ Loading patches file: /home/walksanator/.gradle/caches/forge_gradle/minecraft_us
     Checksum: 9df91179 Exists: true
   Reading patch net.minecraft.world.level.block.BeehiveBlock.binpatch
     Checksum: f751b4e3 Exists: true
+  Reading patch net.minecraft.world.level.block.BeetrootBlock.binpatch
+    Checksum: 7a9d3cb9 Exists: true
+  Reading patch net.minecraft.world.level.block.BigDripleafStemBlock$1.binpatch
+    Checksum: d1c4c8d0 Exists: true
+  Reading patch net.minecraft.world.level.block.BigDripleafStemBlock.binpatch
+    Checksum: a44e5f Exists: true
   Reading patch net.minecraft.world.level.block.Block$1.binpatch
     Checksum: febbce6c Exists: true
   Reading patch net.minecraft.world.level.block.Block$2.binpatch
@@ -2126,6 +2102,14 @@ Loading patches file: /home/walksanator/.gradle/caches/forge_gradle/minecraft_us
     Checksum: a1653d1 Exists: true
   Reading patch net.minecraft.world.level.block.CampfireBlock.binpatch
     Checksum: d614cd20 Exists: true
+  Reading patch net.minecraft.world.level.block.CandleCakeBlock.binpatch
+    Checksum: 20877196 Exists: true
+  Reading patch net.minecraft.world.level.block.CarrotBlock.binpatch
+    Checksum: 52d5bbbd Exists: true
+  Reading patch net.minecraft.world.level.block.CaveVinesBlock.binpatch
+    Checksum: 74c5f5a3 Exists: true
+  Reading patch net.minecraft.world.level.block.CaveVinesPlantBlock.binpatch
+    Checksum: 1872189f Exists: true
   Reading patch net.minecraft.world.level.block.ChestBlock$1.binpatch
     Checksum: a2c7f785 Exists: true
   Reading patch net.minecraft.world.level.block.ChestBlock$2$1.binpatch
@@ -2162,28 +2146,42 @@ Loading patches file: /home/walksanator/.gradle/caches/forge_gradle/minecraft_us
     Checksum: 4059a05e Exists: true
   Reading patch net.minecraft.world.level.block.EnchantmentTableBlock.binpatch
     Checksum: 2497e7ff Exists: true
+  Reading patch net.minecraft.world.level.block.EndGatewayBlock.binpatch
+    Checksum: f7487983 Exists: true
+  Reading patch net.minecraft.world.level.block.EndPortalBlock.binpatch
+    Checksum: 223430f0 Exists: true
   Reading patch net.minecraft.world.level.block.FarmBlock.binpatch
     Checksum: 598310ea Exists: true
   Reading patch net.minecraft.world.level.block.FireBlock.binpatch
     Checksum: 9758cd4c Exists: true
   Reading patch net.minecraft.world.level.block.FlowerPotBlock.binpatch
     Checksum: 5aa73ce6 Exists: true
+  Reading patch net.minecraft.world.level.block.FrostedIceBlock.binpatch
+    Checksum: af939831 Exists: true
+  Reading patch net.minecraft.world.level.block.GrowingPlantBodyBlock.binpatch
+    Checksum: 657edb8e Exists: true
   Reading patch net.minecraft.world.level.block.GrowingPlantHeadBlock.binpatch
     Checksum: f301f453 Exists: true
   Reading patch net.minecraft.world.level.block.LeavesBlock.binpatch
     Checksum: 2a1c192a Exists: true
+  Reading patch net.minecraft.world.level.block.LightBlock.binpatch
+    Checksum: 46ffb3b8 Exists: true
   Reading patch net.minecraft.world.level.block.LiquidBlock.binpatch
     Checksum: ff303e93 Exists: true
   Reading patch net.minecraft.world.level.block.MushroomBlock.binpatch
     Checksum: 1c36dc66 Exists: true
+  Reading patch net.minecraft.world.level.block.NetherPortalBlock$1.binpatch
+    Checksum: 6c0b2477 Exists: true
+  Reading patch net.minecraft.world.level.block.NetherPortalBlock.binpatch
+    Checksum: cca81b8b Exists: true
   Reading patch net.minecraft.world.level.block.NetherWartBlock.binpatch
     Checksum: 229aefd4 Exists: true
   Reading patch net.minecraft.world.level.block.NoteBlock.binpatch
     Checksum: f795451f Exists: true
   Reading patch net.minecraft.world.level.block.OreBlock.binpatch
     Checksum: 2a36c8a4 Exists: true
-  Reading patch net.minecraft.world.level.block.PowderSnowBlock.binpatch
-    Checksum: fc404361 Exists: true
+  Reading patch net.minecraft.world.level.block.PotatoBlock.binpatch
+    Checksum: b4afbc0c Exists: true
   Reading patch net.minecraft.world.level.block.PoweredRailBlock$1.binpatch
     Checksum: 3c6a22ca Exists: true
   Reading patch net.minecraft.world.level.block.PoweredRailBlock.binpatch
@@ -2208,6 +2206,10 @@ Loading patches file: /home/walksanator/.gradle/caches/forge_gradle/minecraft_us
     Checksum: 93da8c75 Exists: true
   Reading patch net.minecraft.world.level.block.SeagrassBlock.binpatch
     Checksum: 55e55ea6 Exists: true
+  Reading patch net.minecraft.world.level.block.ShulkerBoxBlock$1.binpatch
+    Checksum: fe195b0d Exists: true
+  Reading patch net.minecraft.world.level.block.ShulkerBoxBlock.binpatch
+    Checksum: 9de32a6e Exists: true
   Reading patch net.minecraft.world.level.block.SoundType.binpatch
     Checksum: 75874c3c Exists: true
   Reading patch net.minecraft.world.level.block.SpawnerBlock.binpatch
@@ -2226,6 +2228,8 @@ Loading patches file: /home/walksanator/.gradle/caches/forge_gradle/minecraft_us
     Checksum: 402437a Exists: true
   Reading patch net.minecraft.world.level.block.TallGrassBlock.binpatch
     Checksum: c403f8eb Exists: true
+  Reading patch net.minecraft.world.level.block.TallSeagrassBlock.binpatch
+    Checksum: 7d85f2b5 Exists: true
   Reading patch net.minecraft.world.level.block.TntBlock.binpatch
     Checksum: dc69976e Exists: true
   Reading patch net.minecraft.world.level.block.TrapDoorBlock$1.binpatch
@@ -2294,10 +2298,16 @@ Loading patches file: /home/walksanator/.gradle/caches/forge_gradle/minecraft_us
     Checksum: 738b5e92 Exists: true
   Reading patch net.minecraft.world.level.block.entity.SpawnerBlockEntity.binpatch
     Checksum: fc3352b6 Exists: true
+  Reading patch net.minecraft.world.level.block.piston.MovingPistonBlock.binpatch
+    Checksum: a5066770 Exists: true
   Reading patch net.minecraft.world.level.block.piston.PistonBaseBlock$1.binpatch
     Checksum: df4c90 Exists: true
   Reading patch net.minecraft.world.level.block.piston.PistonBaseBlock.binpatch
     Checksum: ca517146 Exists: true
+  Reading patch net.minecraft.world.level.block.piston.PistonHeadBlock$1.binpatch
+    Checksum: 7b23db19 Exists: true
+  Reading patch net.minecraft.world.level.block.piston.PistonHeadBlock.binpatch
+    Checksum: be42307b Exists: true
   Reading patch net.minecraft.world.level.block.piston.PistonMovingBlockEntity$1.binpatch
     Checksum: a4a6435a Exists: true
   Reading patch net.minecraft.world.level.block.piston.PistonMovingBlockEntity.binpatch
@@ -2464,8 +2474,6 @@ Loading patches file: /home/walksanator/.gradle/caches/forge_gradle/minecraft_us
     Checksum: e3dbbc9f Exists: true
   Reading patch net.minecraft.world.level.material.LavaFluid.binpatch
     Checksum: 9bf5a826 Exists: true
-  Reading patch net.minecraft.world.level.pathfinder.AmphibiousNodeEvaluator.binpatch
-    Checksum: eeefb895 Exists: true
   Reading patch net.minecraft.world.level.pathfinder.BlockPathTypes.binpatch
     Checksum: 9d8d3ccb Exists: true
   Reading patch net.minecraft.world.level.pathfinder.WalkNodeEvaluator.binpatch
@@ -2488,14 +2496,8 @@ Loading patches file: /home/walksanator/.gradle/caches/forge_gradle/minecraft_us
     Checksum: d4ce19cb Exists: true
   Reading patch net.minecraft.world.level.storage.LevelStorageSource.binpatch
     Checksum: 2610abbd Exists: true
-  Reading patch net.minecraft.world.level.storage.LevelSummary$BackupStatus.binpatch
-    Checksum: ead3eed4 Exists: true
-  Reading patch net.minecraft.world.level.storage.LevelSummary.binpatch
-    Checksum: a08b6044 Exists: true
   Reading patch net.minecraft.world.level.storage.PlayerDataStorage.binpatch
     Checksum: 32fcb298 Exists: true
-  Reading patch net.minecraft.world.level.storage.PrimaryLevelData.binpatch
-    Checksum: 4147289c Exists: true
   Reading patch net.minecraft.world.level.storage.loot.LootContext$Builder.binpatch
     Checksum: d3ebf703 Exists: true
   Reading patch net.minecraft.world.level.storage.loot.LootContext$DynamicDrop.binpatch
@@ -2532,23 +2534,17 @@ Loading patches file: /home/walksanator/.gradle/caches/forge_gradle/minecraft_us
     Checksum: 6a41b59a Exists: true
   Reading patch net.minecraft.world.level.storage.loot.parameters.LootContextParamSets.binpatch
     Checksum: befbe89f Exists: true
+  Reading patch net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceCondition$Serializer.binpatch
+    Checksum: cef5dbc1 Exists: true
+  Reading patch net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceCondition.binpatch
+    Checksum: 3da3dc21 Exists: true
   Reading patch net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceWithLootingCondition$Serializer.binpatch
     Checksum: d49c13b4 Exists: true
   Reading patch net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceWithLootingCondition.binpatch
     Checksum: a9525be7 Exists: true
-  Reading patch net.minecraft.world.level.storage.loot.providers.nbt.ContextNbtProvider$1.binpatch
-    Checksum: d654ddd Exists: true
-  Reading patch net.minecraft.world.level.storage.loot.providers.nbt.ContextNbtProvider$2.binpatch
-    Checksum: be3d0793 Exists: true
-  Reading patch net.minecraft.world.level.storage.loot.providers.nbt.ContextNbtProvider$Getter.binpatch
-    Checksum: ca60d9cd Exists: true
-  Reading patch net.minecraft.world.level.storage.loot.providers.nbt.ContextNbtProvider$InlineSerializer.binpatch
-    Checksum: a0c852b4 Exists: true
-  Reading patch net.minecraft.world.level.storage.loot.providers.nbt.ContextNbtProvider$Serializer.binpatch
-    Checksum: 29a64636 Exists: true
-  Reading patch net.minecraft.world.level.storage.loot.providers.nbt.ContextNbtProvider.binpatch
-    Checksum: 9b7f69fe Exists: true
-Processing: /home/walksanator/.gradle/caches/forge_gradle/mcp_repo/net/minecraft/joined/1.18.2-20220404.173914/joined-1.18.2-20220404.173914-srg.jar
+  Reading patch net.minecraft.world.phys.Vec3.binpatch
+    Checksum: 6ff64e5 Exists: true
+Processing: /home/walksanator/.gradle/caches/forge_gradle/mcp_repo/net/minecraft/joined/1.18.2-20220228.144236/joined-1.18.2-20220228.144236-srg.jar
   Patching com/mojang/blaze3d/pipeline/RenderTarget 1/1
   Patching com/mojang/blaze3d/platform/GlStateManager$BlendState 1/1
   Patching com/mojang/blaze3d/platform/GlStateManager$BooleanState 1/1
@@ -2572,7 +2568,6 @@ Processing: /home/walksanator/.gradle/caches/forge_gradle/mcp_repo/net/minecraft
   Patching com/mojang/blaze3d/vertex/BufferBuilder$DrawState 1/1
   Patching com/mojang/blaze3d/vertex/BufferBuilder$SortState 1/1
   Patching com/mojang/blaze3d/vertex/BufferBuilder 1/1
-  Patching com/mojang/blaze3d/vertex/SheetedDecalTextureGenerator 1/1
   Patching com/mojang/blaze3d/vertex/VertexConsumer 1/1
   Patching com/mojang/blaze3d/vertex/VertexFormat$1 1/1
   Patching com/mojang/blaze3d/vertex/VertexFormat$IndexType 1/1
@@ -2583,9 +2578,6 @@ Processing: /home/walksanator/.gradle/caches/forge_gradle/mcp_repo/net/minecraft
   Patching com/mojang/blaze3d/vertex/VertexFormatElement$Usage$SetupState 1/1
   Patching com/mojang/blaze3d/vertex/VertexFormatElement$Usage 1/1
   Patching com/mojang/blaze3d/vertex/VertexFormatElement 1/1
-  Patching com/mojang/blaze3d/vertex/VertexMultiConsumer$Double 1/1
-  Patching com/mojang/blaze3d/vertex/VertexMultiConsumer$Multiple 1/1
-  Patching com/mojang/blaze3d/vertex/VertexMultiConsumer 1/1
   Patching com/mojang/math/Matrix3f 1/1
   Patching com/mojang/math/Matrix4f 1/1
   Patching com/mojang/math/Transformation 1/1
@@ -2621,7 +2613,6 @@ Processing: /home/walksanator/.gradle/caches/forge_gradle/mcp_repo/net/minecraft
   Patching net/minecraft/client/Camera$NearPlane 1/1
   Patching net/minecraft/client/Camera 1/1
   Patching net/minecraft/client/ClientBrandRetriever 1/1
-  Patching net/minecraft/client/ClientRecipeBook 1/1
   Patching net/minecraft/client/KeyMapping 1/1
   Patching net/minecraft/client/KeyboardHandler$1 1/1
   Patching net/minecraft/client/KeyboardHandler 1/1
@@ -2640,8 +2631,6 @@ Processing: /home/walksanator/.gradle/caches/forge_gradle/mcp_repo/net/minecraft
   Patching net/minecraft/client/Options$4 1/1
   Patching net/minecraft/client/Options$FieldAccess 1/1
   Patching net/minecraft/client/Options 1/1
-  Patching net/minecraft/client/RecipeBookCategories$1 1/1
-  Patching net/minecraft/client/RecipeBookCategories 1/1
   Patching net/minecraft/client/Screenshot 1/1
   Patching net/minecraft/client/ToggleKeyMapping 1/1
   Patching net/minecraft/client/User$Type 1/1
@@ -2691,7 +2680,6 @@ Processing: /home/walksanator/.gradle/caches/forge_gradle/mcp_repo/net/minecraft
   Patching net/minecraft/client/gui/screens/inventory/CreativeModeInventoryScreen 1/1
   Patching net/minecraft/client/gui/screens/inventory/EffectRenderingInventoryScreen 1/1
   Patching net/minecraft/client/gui/screens/inventory/EnchantmentScreen 1/1
-  Patching net/minecraft/client/gui/screens/inventory/LoomScreen 1/1
   Patching net/minecraft/client/gui/screens/inventory/tooltip/ClientTooltipComponent 1/1
   Patching net/minecraft/client/gui/screens/multiplayer/JoinMultiplayerScreen 1/1
   Patching net/minecraft/client/gui/screens/multiplayer/ServerSelectionList$Entry 1/1
@@ -2722,8 +2710,6 @@ Processing: /home/walksanator/.gradle/caches/forge_gradle/mcp_repo/net/minecraft
   Patching net/minecraft/client/gui/screens/worldselection/WorldPreset$6 1/1
   Patching net/minecraft/client/gui/screens/worldselection/WorldPreset$PresetEditor 1/1
   Patching net/minecraft/client/gui/screens/worldselection/WorldPreset 1/1
-  Patching net/minecraft/client/gui/screens/worldselection/WorldSelectionList$WorldListEntry 1/1
-  Patching net/minecraft/client/gui/screens/worldselection/WorldSelectionList 1/1
   Patching net/minecraft/client/main/Main$1 1/1
   Patching net/minecraft/client/main/Main$2 1/1
   Patching net/minecraft/client/main/Main$3 1/1
@@ -2780,8 +2766,6 @@ Processing: /home/walksanator/.gradle/caches/forge_gradle/mcp_repo/net/minecraft
   Patching net/minecraft/client/renderer/LevelRenderer$TransparencyShaderException 1/1
   Patching net/minecraft/client/renderer/LevelRenderer 1/1
   Patching net/minecraft/client/renderer/LightTexture 1/1
-  Patching net/minecraft/client/renderer/OutlineBufferSource$EntityOutlineGenerator 1/1
-  Patching net/minecraft/client/renderer/OutlineBufferSource 1/1
   Patching net/minecraft/client/renderer/PostChain 1/1
   Patching net/minecraft/client/renderer/RenderType$CompositeRenderType 1/1
   Patching net/minecraft/client/renderer/RenderType$CompositeState$CompositeStateBuilder 1/1
@@ -2793,7 +2777,6 @@ Processing: /home/walksanator/.gradle/caches/forge_gradle/mcp_repo/net/minecraft
   Patching net/minecraft/client/renderer/ShaderInstance 1/1
   Patching net/minecraft/client/renderer/Sheets$1 1/1
   Patching net/minecraft/client/renderer/Sheets 1/1
-  Patching net/minecraft/client/renderer/SpriteCoordinateExpander 1/1
   Patching net/minecraft/client/renderer/block/BlockModelShaper 1/1
   Patching net/minecraft/client/renderer/block/BlockRenderDispatcher$1 1/1
   Patching net/minecraft/client/renderer/block/BlockRenderDispatcher 1/1
@@ -2833,7 +2816,6 @@ Processing: /home/walksanator/.gradle/caches/forge_gradle/mcp_repo/net/minecraft
   Patching net/minecraft/client/renderer/blockentity/BlockEntityRenderers 1/1
   Patching net/minecraft/client/renderer/blockentity/ChestRenderer 1/1
   Patching net/minecraft/client/renderer/blockentity/PistonHeadRenderer 1/1
-  Patching net/minecraft/client/renderer/blockentity/SkullBlockRenderer 1/1
   Patching net/minecraft/client/renderer/chunk/ChunkRenderDispatcher$ChunkTaskResult 1/1
   Patching net/minecraft/client/renderer/chunk/ChunkRenderDispatcher$CompiledChunk$1 1/1
   Patching net/minecraft/client/renderer/chunk/ChunkRenderDispatcher$CompiledChunk 1/1
@@ -2860,7 +2842,6 @@ Processing: /home/walksanator/.gradle/caches/forge_gradle/mcp_repo/net/minecraft
   Patching net/minecraft/client/renderer/item/ItemProperties$CompassWobble 1/1
   Patching net/minecraft/client/renderer/item/ItemProperties 1/1
   Patching net/minecraft/client/renderer/texture/AbstractTexture 1/1
-  Patching net/minecraft/client/renderer/texture/MipmapGenerator 1/1
   Patching net/minecraft/client/renderer/texture/Stitcher$Holder 1/1
   Patching net/minecraft/client/renderer/texture/Stitcher$Region 1/1
   Patching net/minecraft/client/renderer/texture/Stitcher$SpriteLoader 1/1
@@ -2889,13 +2870,7 @@ Processing: /home/walksanator/.gradle/caches/forge_gradle/mcp_repo/net/minecraft
   Patching net/minecraft/client/resources/model/SimpleBakedModel 1/1
   Patching net/minecraft/client/resources/model/WeightedBakedModel$Builder 1/1
   Patching net/minecraft/client/resources/model/WeightedBakedModel 1/1
-  Patching net/minecraft/client/resources/sounds/SoundInstance$Attenuation 1/1
-  Patching net/minecraft/client/resources/sounds/SoundInstance 1/1
   Patching net/minecraft/client/server/IntegratedServer 1/1
-  Patching net/minecraft/client/server/LanServerDetection$LanServerDetector 1/1
-  Patching net/minecraft/client/server/LanServerDetection$LanServerList 1/1
-  Patching net/minecraft/client/server/LanServerDetection 1/1
-  Patching net/minecraft/client/server/LanServerPinger 1/1
   Patching net/minecraft/client/sounds/SoundEngine$DeviceCheckState 1/1
   Patching net/minecraft/client/sounds/SoundEngine 1/1
   Patching net/minecraft/commands/CommandSourceStack 1/1
@@ -2909,6 +2884,14 @@ Processing: /home/walksanator/.gradle/caches/forge_gradle/mcp_repo/net/minecraft
   Patching net/minecraft/commands/arguments/selector/EntitySelectorParser 1/1
   Patching net/minecraft/commands/synchronization/ArgumentTypes$Entry 1/1
   Patching net/minecraft/commands/synchronization/ArgumentTypes 1/1
+  Patching net/minecraft/core/Direction$1 1/1
+  Patching net/minecraft/core/Direction$Axis$1 1/1
+  Patching net/minecraft/core/Direction$Axis$2 1/1
+  Patching net/minecraft/core/Direction$Axis$3 1/1
+  Patching net/minecraft/core/Direction$Axis 1/1
+  Patching net/minecraft/core/Direction$AxisDirection 1/1
+  Patching net/minecraft/core/Direction$Plane 1/1
+  Patching net/minecraft/core/Direction 1/1
   Patching net/minecraft/core/Holder$Direct 1/1
   Patching net/minecraft/core/Holder$Kind 1/1
   Patching net/minecraft/core/Holder$Reference$Type 1/1
@@ -2974,9 +2957,7 @@ Processing: /home/walksanator/.gradle/caches/forge_gradle/mcp_repo/net/minecraft
   Patching net/minecraft/data/loot/EntityLoot 1/1
   Patching net/minecraft/data/loot/LootTableProvider 1/1
   Patching net/minecraft/data/recipes/RecipeProvider 1/1
-  Patching net/minecraft/data/tags/BiomeTagsProvider 1/1
   Patching net/minecraft/data/tags/BlockTagsProvider 1/1
-  Patching net/minecraft/data/tags/ConfiguredStructureTagsProvider 1/1
   Patching net/minecraft/data/tags/EntityTypeTagsProvider 1/1
   Patching net/minecraft/data/tags/FluidTagsProvider 1/1
   Patching net/minecraft/data/tags/GameEventTagsProvider 1/1
@@ -3011,7 +2992,11 @@ Processing: /home/walksanator/.gradle/caches/forge_gradle/mcp_repo/net/minecraft
   Patching net/minecraft/network/chat/Style$Serializer 1/1
   Patching net/minecraft/network/chat/Style 1/1
   Patching net/minecraft/network/chat/TranslatableComponent 1/1
+  Patching net/minecraft/network/protocol/game/ClientboundCommandsPacket$Entry 1/1
+  Patching net/minecraft/network/protocol/game/ClientboundCommandsPacket 1/1
   Patching net/minecraft/network/protocol/game/ClientboundCustomPayloadPacket 1/1
+  Patching net/minecraft/network/protocol/game/ClientboundUpdateAttributesPacket$AttributeSnapshot 1/1
+  Patching net/minecraft/network/protocol/game/ClientboundUpdateAttributesPacket 1/1
   Patching net/minecraft/network/protocol/game/ServerboundContainerClickPacket 1/1
   Patching net/minecraft/network/protocol/game/ServerboundCustomPayloadPacket 1/1
   Patching net/minecraft/network/protocol/game/ServerboundSetCreativeModeSlotPacket 1/1
@@ -3131,17 +3116,14 @@ Processing: /home/walksanator/.gradle/caches/forge_gradle/mcp_repo/net/minecraft
   Patching net/minecraft/server/packs/PackResources 1/1
   Patching net/minecraft/server/packs/VanillaPackResources$1 1/1
   Patching net/minecraft/server/packs/VanillaPackResources 1/1
-  Patching net/minecraft/server/packs/metadata/pack/PackMetadataSection 1/1
-  Patching net/minecraft/server/packs/metadata/pack/PackMetadataSectionSerializer 1/1
   Patching net/minecraft/server/packs/repository/Pack$PackConstructor 1/1
   Patching net/minecraft/server/packs/repository/Pack$Position 1/1
   Patching net/minecraft/server/packs/repository/Pack 1/1
-  Patching net/minecraft/server/packs/repository/PackCompatibility 1/1
   Patching net/minecraft/server/packs/repository/PackRepository 1/1
   Patching net/minecraft/server/packs/resources/FallbackResourceManager$LeakedResourceWarningInputStream 1/1
   Patching net/minecraft/server/packs/resources/FallbackResourceManager 1/1
-  Patching net/minecraft/server/packs/resources/MultiPackResourceManager 1/1
-  Patching net/minecraft/server/packs/resources/ReloadableResourceManager 1/1
+  Patching net/minecraft/server/packs/resources/ResourceManager$Empty 1/1
+  Patching net/minecraft/server/packs/resources/ResourceManager 1/1
   Patching net/minecraft/server/packs/resources/SimpleJsonResourceReloadListener 1/1
   Patching net/minecraft/server/players/PlayerList$1 1/1
   Patching net/minecraft/server/players/PlayerList 1/1
@@ -3149,8 +3131,6 @@ Processing: /home/walksanator/.gradle/caches/forge_gradle/mcp_repo/net/minecraft
   Patching net/minecraft/server/rcon/thread/RconClient 1/1
   Patching net/minecraft/sounds/SoundEvent 1/1
   Patching net/minecraft/sounds/SoundEvents 1/1
-  Patching net/minecraft/stats/RecipeBookSettings$TypeSettings 1/1
-  Patching net/minecraft/stats/RecipeBookSettings 1/1
   Patching net/minecraft/stats/StatType 1/1
   Patching net/minecraft/tags/BlockTags 1/1
   Patching net/minecraft/tags/FluidTags 1/1
@@ -3166,9 +3146,8 @@ Processing: /home/walksanator/.gradle/caches/forge_gradle/mcp_repo/net/minecraft
   Patching net/minecraft/tags/TagLoader 1/1
   Patching net/minecraft/tags/TagManager$LoadResult 1/1
   Patching net/minecraft/tags/TagManager 1/1
-  Patching net/minecraft/util/datafix/fixes/StructuresBecomeConfiguredFix$Conversion 1/1
-  Patching net/minecraft/util/datafix/fixes/StructuresBecomeConfiguredFix 1/1
   Patching net/minecraft/world/effect/MobEffect 1/1
+  Patching net/minecraft/world/effect/MobEffectCategory 1/1
   Patching net/minecraft/world/effect/MobEffectInstance 1/1
   Patching net/minecraft/world/effect/MobEffects$1 1/1
   Patching net/minecraft/world/effect/MobEffects 1/1
@@ -3203,8 +3182,6 @@ Processing: /home/walksanator/.gradle/caches/forge_gradle/mcp_repo/net/minecraft
   Patching net/minecraft/world/entity/ai/behavior/CrossbowAttack$CrossbowState 1/1
   Patching net/minecraft/world/entity/ai/behavior/CrossbowAttack 1/1
   Patching net/minecraft/world/entity/ai/behavior/HarvestFarmland 1/1
-  Patching net/minecraft/world/entity/ai/control/MoveControl$Operation 1/1
-  Patching net/minecraft/world/entity/ai/control/MoveControl 1/1
   Patching net/minecraft/world/entity/ai/goal/BreakDoorGoal 1/1
   Patching net/minecraft/world/entity/ai/goal/EatBlockGoal 1/1
   Patching net/minecraft/world/entity/ai/goal/MeleeAttackGoal 1/1
@@ -3321,7 +3298,6 @@ Processing: /home/walksanator/.gradle/caches/forge_gradle/mcp_repo/net/minecraft
   Patching net/minecraft/world/entity/monster/Illusioner$IllusionerMirrorSpellGoal 1/1
   Patching net/minecraft/world/entity/monster/Illusioner 1/1
   Patching net/minecraft/world/entity/monster/MagmaCube 1/1
-  Patching net/minecraft/world/entity/monster/Monster 1/1
   Patching net/minecraft/world/entity/monster/Pillager 1/1
   Patching net/minecraft/world/entity/monster/Ravager$RavagerMeleeAttackGoal 1/1
   Patching net/minecraft/world/entity/monster/Ravager$RavagerNavigation 1/1
@@ -3403,7 +3379,6 @@ Processing: /home/walksanator/.gradle/caches/forge_gradle/mcp_repo/net/minecraft
   Patching net/minecraft/world/entity/vehicle/MinecartFurnace 1/1
   Patching net/minecraft/world/entity/vehicle/MinecartSpawner$1 1/1
   Patching net/minecraft/world/entity/vehicle/MinecartSpawner 1/1
-  Patching net/minecraft/world/food/FoodData 1/1
   Patching net/minecraft/world/food/FoodProperties$Builder 1/1
   Patching net/minecraft/world/food/FoodProperties 1/1
   Patching net/minecraft/world/inventory/AbstractContainerMenu$1 1/1
@@ -3431,24 +3406,15 @@ Processing: /home/walksanator/.gradle/caches/forge_gradle/mcp_repo/net/minecraft
   Patching net/minecraft/world/inventory/InventoryMenu$1 1/1
   Patching net/minecraft/world/inventory/InventoryMenu$2 1/1
   Patching net/minecraft/world/inventory/InventoryMenu 1/1
-  Patching net/minecraft/world/inventory/LoomMenu$1 1/1
-  Patching net/minecraft/world/inventory/LoomMenu$2 1/1
-  Patching net/minecraft/world/inventory/LoomMenu$3 1/1
-  Patching net/minecraft/world/inventory/LoomMenu$4 1/1
-  Patching net/minecraft/world/inventory/LoomMenu$5 1/1
-  Patching net/minecraft/world/inventory/LoomMenu$6 1/1
-  Patching net/minecraft/world/inventory/LoomMenu 1/1
   Patching net/minecraft/world/inventory/MenuType$MenuSupplier 1/1
   Patching net/minecraft/world/inventory/MenuType 1/1
   Patching net/minecraft/world/inventory/RecipeBookMenu 1/1
-  Patching net/minecraft/world/inventory/RecipeBookType 1/1
   Patching net/minecraft/world/inventory/ResultSlot 1/1
   Patching net/minecraft/world/inventory/Slot 1/1
   Patching net/minecraft/world/item/ArmorItem$1 1/1
   Patching net/minecraft/world/item/ArmorItem 1/1
   Patching net/minecraft/world/item/ArrowItem 1/1
   Patching net/minecraft/world/item/AxeItem 1/1
-  Patching net/minecraft/world/item/BannerItem 1/1
   Patching net/minecraft/world/item/BlockItem 1/1
   Patching net/minecraft/world/item/BoneMealItem 1/1
   Patching net/minecraft/world/item/BowItem 1/1
@@ -3467,7 +3433,6 @@ Processing: /home/walksanator/.gradle/caches/forge_gradle/mcp_repo/net/minecraft
   Patching net/minecraft/world/item/CreativeModeTab$8 1/1
   Patching net/minecraft/world/item/CreativeModeTab$9 1/1
   Patching net/minecraft/world/item/CreativeModeTab 1/1
-  Patching net/minecraft/world/item/CrossbowItem 1/1
   Patching net/minecraft/world/item/DiggerItem 1/1
   Patching net/minecraft/world/item/DyeColor 1/1
   Patching net/minecraft/world/item/DyeableHorseArmorItem 1/1
@@ -3493,19 +3458,26 @@ Processing: /home/walksanator/.gradle/caches/forge_gradle/mcp_repo/net/minecraft
   Patching net/minecraft/world/item/ShovelItem 1/1
   Patching net/minecraft/world/item/SpawnEggItem 1/1
   Patching net/minecraft/world/item/StandingAndWallBlockItem 1/1
-  Patching net/minecraft/world/item/SuspiciousStewItem 1/1
   Patching net/minecraft/world/item/SwordItem 1/1
   Patching net/minecraft/world/item/Tier 1/1
   Patching net/minecraft/world/item/Tiers 1/1
   Patching net/minecraft/world/item/alchemy/Potion 1/1
   Patching net/minecraft/world/item/alchemy/PotionBrewing$Mix 1/1
   Patching net/minecraft/world/item/alchemy/PotionBrewing 1/1
+  Patching net/minecraft/world/item/crafting/AbstractCookingRecipe 1/1
+  Patching net/minecraft/world/item/crafting/ArmorDyeRecipe 1/1
   Patching net/minecraft/world/item/crafting/BannerDuplicateRecipe 1/1
+  Patching net/minecraft/world/item/crafting/BlastingRecipe 1/1
   Patching net/minecraft/world/item/crafting/BookCloningRecipe 1/1
+  Patching net/minecraft/world/item/crafting/CampfireCookingRecipe 1/1
+  Patching net/minecraft/world/item/crafting/FireworkRocketRecipe 1/1
+  Patching net/minecraft/world/item/crafting/FireworkStarFadeRecipe 1/1
+  Patching net/minecraft/world/item/crafting/FireworkStarRecipe 1/1
   Patching net/minecraft/world/item/crafting/Ingredient$ItemValue 1/1
   Patching net/minecraft/world/item/crafting/Ingredient$TagValue 1/1
   Patching net/minecraft/world/item/crafting/Ingredient$Value 1/1
   Patching net/minecraft/world/item/crafting/Ingredient 1/1
+  Patching net/minecraft/world/item/crafting/MapCloningRecipe 1/1
   Patching net/minecraft/world/item/crafting/Recipe 1/1
   Patching net/minecraft/world/item/crafting/RecipeManager 1/1
   Patching net/minecraft/world/item/crafting/RecipeSerializer 1/1
@@ -3514,6 +3486,7 @@ Processing: /home/walksanator/.gradle/caches/forge_gradle/mcp_repo/net/minecraft
   Patching net/minecraft/world/item/crafting/ShapedRecipe 1/1
   Patching net/minecraft/world/item/crafting/ShapelessRecipe$Serializer 1/1
   Patching net/minecraft/world/item/crafting/ShapelessRecipe 1/1
+  Patching net/minecraft/world/item/crafting/ShieldDecorationRecipe 1/1
   Patching net/minecraft/world/item/crafting/ShulkerBoxColoring 1/1
   Patching net/minecraft/world/item/crafting/SimpleCookingSerializer$CookieBaker 1/1
   Patching net/minecraft/world/item/crafting/SimpleCookingSerializer 1/1
@@ -3521,6 +3494,11 @@ Processing: /home/walksanator/.gradle/caches/forge_gradle/mcp_repo/net/minecraft
   Patching net/minecraft/world/item/crafting/SingleItemRecipe$Serializer$SingleItemMaker 1/1
   Patching net/minecraft/world/item/crafting/SingleItemRecipe$Serializer 1/1
   Patching net/minecraft/world/item/crafting/SingleItemRecipe 1/1
+  Patching net/minecraft/world/item/crafting/SmeltingRecipe 1/1
+  Patching net/minecraft/world/item/crafting/SmokingRecipe 1/1
+  Patching net/minecraft/world/item/crafting/StonecutterRecipe 1/1
+  Patching net/minecraft/world/item/crafting/SuspiciousStewRecipe 1/1
+  Patching net/minecraft/world/item/crafting/TippedArrowRecipe 1/1
   Patching net/minecraft/world/item/crafting/UpgradeRecipe$Serializer 1/1
   Patching net/minecraft/world/item/crafting/UpgradeRecipe 1/1
   Patching net/minecraft/world/item/enchantment/DiggingEnchantment 1/1
@@ -3588,12 +3566,18 @@ Processing: /home/walksanator/.gradle/caches/forge_gradle/mcp_repo/net/minecraft
   Patching net/minecraft/world/level/biome/MobSpawnSettings$MobSpawnCost 1/1
   Patching net/minecraft/world/level/biome/MobSpawnSettings$SpawnerData 1/1
   Patching net/minecraft/world/level/biome/MobSpawnSettings 1/1
+  Patching net/minecraft/world/level/block/AbstractBannerBlock 1/1
+  Patching net/minecraft/world/level/block/AttachedStemBlock 1/1
   Patching net/minecraft/world/level/block/BambooBlock 1/1
   Patching net/minecraft/world/level/block/BambooSaplingBlock 1/1
+  Patching net/minecraft/world/level/block/BannerBlock 1/1
   Patching net/minecraft/world/level/block/BaseFireBlock 1/1
   Patching net/minecraft/world/level/block/BaseRailBlock$1 1/1
   Patching net/minecraft/world/level/block/BaseRailBlock 1/1
   Patching net/minecraft/world/level/block/BeehiveBlock 1/1
+  Patching net/minecraft/world/level/block/BeetrootBlock 1/1
+  Patching net/minecraft/world/level/block/BigDripleafStemBlock$1 1/1
+  Patching net/minecraft/world/level/block/BigDripleafStemBlock 1/1
   Patching net/minecraft/world/level/block/Block$1 1/1
   Patching net/minecraft/world/level/block/Block$2 1/1
   Patching net/minecraft/world/level/block/Block$BlockStatePairKey 1/1
@@ -3603,6 +3587,10 @@ Processing: /home/walksanator/.gradle/caches/forge_gradle/mcp_repo/net/minecraft
   Patching net/minecraft/world/level/block/BushBlock 1/1
   Patching net/minecraft/world/level/block/CactusBlock 1/1
   Patching net/minecraft/world/level/block/CampfireBlock 1/1
+  Patching net/minecraft/world/level/block/CandleCakeBlock 1/1
+  Patching net/minecraft/world/level/block/CarrotBlock 1/1
+  Patching net/minecraft/world/level/block/CaveVinesBlock 1/1
+  Patching net/minecraft/world/level/block/CaveVinesPlantBlock 1/1
   Patching net/minecraft/world/level/block/ChestBlock$1 1/1
   Patching net/minecraft/world/level/block/ChestBlock$2$1 1/1
   Patching net/minecraft/world/level/block/ChestBlock$2 1/1
@@ -3621,17 +3609,24 @@ Processing: /home/walksanator/.gradle/caches/forge_gradle/mcp_repo/net/minecraft
   Patching net/minecraft/world/level/block/DoublePlantBlock 1/1
   Patching net/minecraft/world/level/block/DropperBlock 1/1
   Patching net/minecraft/world/level/block/EnchantmentTableBlock 1/1
+  Patching net/minecraft/world/level/block/EndGatewayBlock 1/1
+  Patching net/minecraft/world/level/block/EndPortalBlock 1/1
   Patching net/minecraft/world/level/block/FarmBlock 1/1
   Patching net/minecraft/world/level/block/FireBlock 1/1
   Patching net/minecraft/world/level/block/FlowerPotBlock 1/1
+  Patching net/minecraft/world/level/block/FrostedIceBlock 1/1
+  Patching net/minecraft/world/level/block/GrowingPlantBodyBlock 1/1
   Patching net/minecraft/world/level/block/GrowingPlantHeadBlock 1/1
   Patching net/minecraft/world/level/block/LeavesBlock 1/1
+  Patching net/minecraft/world/level/block/LightBlock 1/1
   Patching net/minecraft/world/level/block/LiquidBlock 1/1
   Patching net/minecraft/world/level/block/MushroomBlock 1/1
+  Patching net/minecraft/world/level/block/NetherPortalBlock$1 1/1
+  Patching net/minecraft/world/level/block/NetherPortalBlock 1/1
   Patching net/minecraft/world/level/block/NetherWartBlock 1/1
   Patching net/minecraft/world/level/block/NoteBlock 1/1
   Patching net/minecraft/world/level/block/OreBlock 1/1
-  Patching net/minecraft/world/level/block/PowderSnowBlock 1/1
+  Patching net/minecraft/world/level/block/PotatoBlock 1/1
   Patching net/minecraft/world/level/block/PoweredRailBlock$1 1/1
   Patching net/minecraft/world/level/block/PoweredRailBlock 1/1
   Patching net/minecraft/world/level/block/PumpkinBlock 1/1
@@ -3644,6 +3639,8 @@ Processing: /home/walksanator/.gradle/caches/forge_gradle/mcp_repo/net/minecraft
   Patching net/minecraft/world/level/block/RedStoneWireBlock 1/1
   Patching net/minecraft/world/level/block/SaplingBlock 1/1
   Patching net/minecraft/world/level/block/SeagrassBlock 1/1
+  Patching net/minecraft/world/level/block/ShulkerBoxBlock$1 1/1
+  Patching net/minecraft/world/level/block/ShulkerBoxBlock 1/1
   Patching net/minecraft/world/level/block/SoundType 1/1
   Patching net/minecraft/world/level/block/SpawnerBlock 1/1
   Patching net/minecraft/world/level/block/SpreadingSnowyDirtBlock 1/1
@@ -3653,6 +3650,7 @@ Processing: /home/walksanator/.gradle/caches/forge_gradle/mcp_repo/net/minecraft
   Patching net/minecraft/world/level/block/SugarCaneBlock 1/1
   Patching net/minecraft/world/level/block/SweetBerryBushBlock 1/1
   Patching net/minecraft/world/level/block/TallGrassBlock 1/1
+  Patching net/minecraft/world/level/block/TallSeagrassBlock 1/1
   Patching net/minecraft/world/level/block/TntBlock 1/1
   Patching net/minecraft/world/level/block/TrapDoorBlock$1 1/1
   Patching net/minecraft/world/level/block/TrapDoorBlock 1/1
@@ -3687,8 +3685,11 @@ Processing: /home/walksanator/.gradle/caches/forge_gradle/mcp_repo/net/minecraft
   Patching net/minecraft/world/level/block/entity/ShulkerBoxBlockEntity 1/1
   Patching net/minecraft/world/level/block/entity/SpawnerBlockEntity$1 1/1
   Patching net/minecraft/world/level/block/entity/SpawnerBlockEntity 1/1
+  Patching net/minecraft/world/level/block/piston/MovingPistonBlock 1/1
   Patching net/minecraft/world/level/block/piston/PistonBaseBlock$1 1/1
   Patching net/minecraft/world/level/block/piston/PistonBaseBlock 1/1
+  Patching net/minecraft/world/level/block/piston/PistonHeadBlock$1 1/1
+  Patching net/minecraft/world/level/block/piston/PistonHeadBlock 1/1
   Patching net/minecraft/world/level/block/piston/PistonMovingBlockEntity$1 1/1
   Patching net/minecraft/world/level/block/piston/PistonMovingBlockEntity 1/1
   Patching net/minecraft/world/level/block/piston/PistonStructureResolver 1/1
@@ -3772,7 +3773,6 @@ Processing: /home/walksanator/.gradle/caches/forge_gradle/mcp_repo/net/minecraft
   Patching net/minecraft/world/level/material/LavaFluid$Flowing 1/1
   Patching net/minecraft/world/level/material/LavaFluid$Source 1/1
   Patching net/minecraft/world/level/material/LavaFluid 1/1
-  Patching net/minecraft/world/level/pathfinder/AmphibiousNodeEvaluator 1/1
   Patching net/minecraft/world/level/pathfinder/BlockPathTypes 1/1
   Patching net/minecraft/world/level/pathfinder/WalkNodeEvaluator 1/1
   Patching net/minecraft/world/level/portal/PortalForcer 1/1
@@ -3784,10 +3784,7 @@ Processing: /home/walksanator/.gradle/caches/forge_gradle/mcp_repo/net/minecraft
   Patching net/minecraft/world/level/storage/LevelStorageSource$LevelStorageAccess$2 1/1
   Patching net/minecraft/world/level/storage/LevelStorageSource$LevelStorageAccess 1/1
   Patching net/minecraft/world/level/storage/LevelStorageSource 1/1
-  Patching net/minecraft/world/level/storage/LevelSummary$BackupStatus 1/1
-  Patching net/minecraft/world/level/storage/LevelSummary 1/1
   Patching net/minecraft/world/level/storage/PlayerDataStorage 1/1
-  Patching net/minecraft/world/level/storage/PrimaryLevelData 1/1
   Patching net/minecraft/world/level/storage/loot/LootContext$Builder 1/1
   Patching net/minecraft/world/level/storage/loot/LootContext$DynamicDrop 1/1
   Patching net/minecraft/world/level/storage/loot/LootContext$EntityTarget$Serializer 1/1
@@ -3806,14 +3803,11 @@ Processing: /home/walksanator/.gradle/caches/forge_gradle/mcp_repo/net/minecraft
   Patching net/minecraft/world/level/storage/loot/functions/SmeltItemFunction$Serializer 1/1
   Patching net/minecraft/world/level/storage/loot/functions/SmeltItemFunction 1/1
   Patching net/minecraft/world/level/storage/loot/parameters/LootContextParamSets 1/1
+  Patching net/minecraft/world/level/storage/loot/predicates/LootItemRandomChanceCondition$Serializer 1/1
+  Patching net/minecraft/world/level/storage/loot/predicates/LootItemRandomChanceCondition 1/1
   Patching net/minecraft/world/level/storage/loot/predicates/LootItemRandomChanceWithLootingCondition$Serializer 1/1
   Patching net/minecraft/world/level/storage/loot/predicates/LootItemRandomChanceWithLootingCondition 1/1
-  Patching net/minecraft/world/level/storage/loot/providers/nbt/ContextNbtProvider$1 1/1
-  Patching net/minecraft/world/level/storage/loot/providers/nbt/ContextNbtProvider$2 1/1
-  Patching net/minecraft/world/level/storage/loot/providers/nbt/ContextNbtProvider$Getter 1/1
-  Patching net/minecraft/world/level/storage/loot/providers/nbt/ContextNbtProvider$InlineSerializer 1/1
-  Patching net/minecraft/world/level/storage/loot/providers/nbt/ContextNbtProvider$Serializer 1/1
-  Patching net/minecraft/world/level/storage/loot/providers/nbt/ContextNbtProvider 1/1
+  Patching net/minecraft/world/phys/Vec3 1/1
   Patching net/minecraft/world/level/biome/BiomeSpecialEffects$GrassColorModifier$ColorModifier 1/1
   Patching net/minecraft/Util$3 1/1
   Patching net/minecraft/world/item/Items$1 1/1

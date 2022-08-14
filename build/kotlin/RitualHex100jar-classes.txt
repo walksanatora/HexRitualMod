@@ -1,0 +1,1 @@
+/home/walksanator/git/minecraft/mods/ritual/ritualkt/build/classes/kotlin/main/com/walksanator/ritualhex/hexes/HexRegister.class:/home/walksanator/git/minecraft/mods/ritual/ritualkt/build/classes/kotlin/main/com/walksanator/ritualhex/hexes/glpyhs/OpAmogus.class:/home/walksanator/git/minecraft/mods/ritual/ritualkt/build/classes/kotlin/main/com/walksanator/ritualhex/ritualhex.class
