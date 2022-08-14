@@ -1,9 +1,0 @@
-Manifest-Version: 1.0
-Specification-Title: RitualHex
-Specification-Vendor: RitualHexsareus
-Specification-Version: 1
-Implementation-Title: HexRitualMod
-Implementation-Version: 1.0.0
-Implementation-Vendor: RitualHexsareus
-Implementation-Timestamp: 2022-08-13T19:56:02-0700
-
