@@ -6,23 +6,29 @@ loaderVersion="[3,)" # Require at least 3.x
 license='LGPL'
 
 [[mods]]
-modId="examplemod"
+modId="ritualhex"
 version="${file.jarVersion}"
-displayName="ExampleMod"
-credits="The ExampleMod dev team"
-authors="ExampleModAuthor"
+displayName="Hex Rituals"
+credits="The Hexcasting contribuitors"
+authors="walksanator"
 description='''
 Example mod that uses Kotlin for Forge.
 '''
-[[dependencies.examplemod]]
+[[dependencies.ritualhex]]
     modId="forge"
     mandatory=true
     versionRange="[39,)"
     ordering="NONE"
     side="BOTH"
-[[dependencies.examplemod]]
+[[dependencies.ritualhex]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.18.1]"
+    versionRange="[1.18.2]"
+    ordering="NONE"
+    side="BOTH"
+[[dependecies.ritualhex]]
+    modid="hexcasting"
+    mandatory=true
+    versionRange="[0.9)"
     ordering="NONE"
     side="BOTH"
