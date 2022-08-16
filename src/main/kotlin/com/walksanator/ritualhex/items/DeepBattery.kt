@@ -4,8 +4,8 @@ import at.petrak.hexcasting.api.item.ManaHolderItem
 import net.minecraft.world.item.Item
 import net.minecraft.world.item.ItemStack
 
-class DeepBattery : Item,ManaHolderItem {
-    
+class DeepBattery(Props: Properties) : Item(Props),ManaHolderItem {
+
     override fun getMana(items: ItemStack) : Int {
         TODO("Not yet implemented")
     }
