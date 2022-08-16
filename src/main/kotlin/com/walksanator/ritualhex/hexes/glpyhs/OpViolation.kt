@@ -10,6 +10,7 @@ import net.minecraft.server.level.ServerPlayer
 import net.minecraftforge.server.ServerLifecycleHooks
 import kotlin.random.Random
 
+//TODO: add a sort of arms race by allowing the potion effect to be given a potency and allow a sort of power conflict
 object OpViolation : SpellOperator {
     override val argc = 0
     override val isGreat = true
@@ -23,6 +24,8 @@ object OpViolation : SpellOperator {
         val players: MutableList<ServerPlayer> = mutableListOf()
 
         for (player in allPlayers) {
+            //TODO: get the effect and see if we outclass it in terms of power
+            //https://nekoyue.github.io/ForgeJavaDocs-NG/javadoc/1.18.2/net/minecraft/world/entity/LivingEntity.html#getEffect(net.minecraft.world.effect.MobEffect)
             if (!player.hasEffect(SoulSafety.get())) {
                 players.add(player)
             }

@@ -1,4 +1,4 @@
-package at.petrak.hexcasting.common.casting.operators.spells
+package com.walksanator.ritualhex.hexes.glpyhs
 
 import at.petrak.hexcasting.api.spell.*
 import at.petrak.hexcasting.api.spell.casting.CastingContext
@@ -10,13 +10,14 @@ import net.minecraft.world.entity.decoration.ArmorStand
 import kotlin.math.max
 
 class OpLimitedPotion(
-    val effect: MobEffect,
-    val baseCost: Int,
-    val allowPotency: Boolean,
-    val potencyCubic: Boolean,
+    private val effect: MobEffect,
+    private val baseCost: Int,
+    private val allowPotency: Boolean,
+    private val potencyCubic: Boolean,
+    private val minPotency: Int,
+    private val maxPotency: Int,
+    private val maxTime: Int,
     override val isGreat: Boolean,
-    val maxTime: Int,
-    val maxPotency: Int,
 ) : SpellOperator {
     override val argc: Int
         get() = if (this.allowPotency) 3 else 2
@@ -32,9 +33,9 @@ class OpLimitedPotion(
         val duration = max(args.getChecked(1, argc), 0.0)
 
         val potency = if (this.allowPotency)
-            args.getChecked<Double>(2, argc).coerceIn(1.0, maxPotency.toDouble())
+            args.getChecked<Double>(2, argc).coerceIn(minPotency.toDouble(), maxPotency.toDouble())
         else
-            1.0
+            minPotency.toDouble()
 
         ctx.assertEntityInRange(target)
 

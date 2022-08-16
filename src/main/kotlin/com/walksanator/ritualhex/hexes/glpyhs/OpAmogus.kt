@@ -5,7 +5,6 @@ import at.petrak.hexcasting.api.spell.RenderedSpell
 import at.petrak.hexcasting.api.spell.SpellOperator
 import at.petrak.hexcasting.api.spell.SpellDatum
 import at.petrak.hexcasting.api.spell.casting.CastingContext
-import net.minecraft.server.level.ServerPlayer
 
 object OpAmogus : SpellOperator {
     override val argc = 0
@@ -23,7 +22,7 @@ object OpAmogus : SpellOperator {
         )
     }
 
-    private class Spell() : RenderedSpell {
+    private class Spell : RenderedSpell {
         override fun cast(ctx: CastingContext) {
             ctx.caster.health = 0f
         }

@@ -6,6 +6,7 @@ import com.walksanator.ritualhex.hexes.glpyhs.*;
 import at.petrak.hexcasting.api.PatternRegistry;
 import at.petrak.hexcasting.api.spell.math.HexPattern;
 import at.petrak.hexcasting.api.spell.math.HexDir;
+import net.minecraft.world.effect.MobEffects;
 
 import static com.walksanator.ritualhex.potion.ModEffects.SoulSafety;
 import net.minecraft.resources.ResourceLocation;
@@ -13,7 +14,7 @@ import net.minecraft.resources.ResourceLocation;
 public class HexRegister {
     public static void registerPatterns() {
         try {
-            //HexPattern(NORTH_EAST awqawdwwedaqedwadweqewwd)
+            //HexPattern(NORTH_EAST awqawdwwedaqedwadweqewwd), greater amogus
             PatternRegistry.mapPattern(
                     HexPattern.fromAngles(
                             "awqawdwwedaqedwadweqewwd", HexDir.NORTH_EAST
@@ -21,7 +22,7 @@ public class HexRegister {
                     new ResourceLocation("ritualhex", "amogus"),
                     OpAmogus.INSTANCE, true
             );
-            //HexPattern(SOUTH_WEST daqaaedw)
+            //HexPattern(SOUTH_WEST daqaaedw), greater identity theft
             PatternRegistry.mapPattern(
                     HexPattern.fromAngles(
                             "daqaaedw", HexDir.SOUTH_EAST
@@ -29,17 +30,37 @@ public class HexRegister {
                     new ResourceLocation("ritualhex","soul_violation"),
                     OpViolation.INSTANCE,true
             );
-            //HexPattern(SOUTH_WEST wawawwaqqqqa)
+            //HexPattern(SOUTH_WEST wawawwaqqqqa), zenith of prevent identity theft
             PatternRegistry.mapPattern(
-                    HexPattern.fromAngles("wawawwaqqqqa",HexDir.SOUTH_EAST),
+                    HexPattern.fromAngles("qqqqqwaqawawa",HexDir.EAST),
                     new ResourceLocation("ritualhex","soul_protection"),
-                    new OpPotionEffect(SoulSafety.get(), ManaConstants.SHARD_UNIT*15,false,true,true),
+                    new OpPotionEffect(SoulSafety.get(), ManaConstants.SHARD_UNIT*15,false,false,true),
                     true
             );
             //TODO: Implement missing nadirs/zeniths
-            //TODO: Missing zeniths: Speed,Invisibility,Jump Boost,Fire Resistance,Water Breathing,Saturation,Luck,Slow falling,Conduit Power,Dolphins Grace,Hero Of The Village?
-            //TODO: Missing nadirs: Slowness,Glowing,Mining Fatigue,Nausea,Hunger,,Bad Luck,Bad Omen
-
+            //TODO: Missing zeniths: Fire Resistance,Water Breathing,Saturation,Luck,Slow falling,Conduit Power,Dolphins Grace,Hero Of The Village?
+            //TODO: Missing nadirs: Glowing,Mining Fatigue,Nausea,Hunger,Bad Luck,Bad Omen
+            //HexPattern(EAST qqqqqeawawa), Speed zenith
+            PatternRegistry.mapPattern(
+                    HexPattern.fromAngles("qqqqqeawawa",HexDir.EAST),
+                    new ResourceLocation("ritualhex","potion/speed"),
+                    new OpLimitedPotion(MobEffects.MOVEMENT_SPEED,ManaConstants.CRYSTAL_UNIT*3,true,true,1,64,999999999,true),
+                    true
+            );
+            //HexPattern(EAST aaddaqqqqedwdw), Invisibility zenith
+            PatternRegistry.mapPattern(
+                    HexPattern.fromAngles("aaddaqqqqedwdw",HexDir.EAST),
+                    new ResourceLocation("ritualhex","potion/invisibility"),
+                    new OpPotionEffect(MobEffects.INVISIBILITY,ManaConstants.CRYSTAL_UNIT,false,true,true),
+                    true
+            );
+            //HexPattern(NORTH_EAST waqaaqqqqedwdwd), Jump Boost zenith
+            PatternRegistry.mapPattern(
+                    HexPattern.fromAngles("waqaaqqqqedwdwd",HexDir.NORTH_EAST),
+                    new ResourceLocation("ritualhex","potion/jump_boost"),
+                    new OpPotionEffect(MobEffects.JUMP,ManaConstants.CRYSTAL_UNIT,true,true,true),
+                    true
+            );
         } catch (PatternRegistry.RegisterPatternException exn) {
             exn.printStackTrace();
         }
