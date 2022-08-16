@@ -10,10 +10,10 @@ import net.minecraft.resources.ResourceLocation;
 public class HexRegister {
     public static void registerPatterns() {
         try {
-            //HexPattern(EAST qawqadwedaqedwadwedwawadqawdewwdw)
+            //HexPattern(NORTH_EAST awqawdwwedaqedwadweqewwd)
             PatternRegistry.mapPattern(
                     HexPattern.fromAngles(
-                            "qawqadwedaqedwadwedwawadqawdewwdw", HexDir.EAST
+                            "awqawdwwedaqedwadweqewwd", HexDir.NORTH_EAST
                     ),
                     new ResourceLocation("ritualhex", "amogus"),
                     OpAmogus.INSTANCE, true

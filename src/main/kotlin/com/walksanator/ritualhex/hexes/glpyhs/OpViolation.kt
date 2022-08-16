@@ -1,16 +1,13 @@
 package com.walksanator.ritualhex.hexes.glpyhs
 
 import at.petrak.hexcasting.api.misc.ManaConstants
-import at.petrak.hexcasting.api.spell.ParticleSpray
-import at.petrak.hexcasting.api.spell.RenderedSpell
-import at.petrak.hexcasting.api.spell.SpellDatum
-import at.petrak.hexcasting.api.spell.SpellOperator
+import at.petrak.hexcasting.api.spell.*
 import at.petrak.hexcasting.api.spell.casting.CastingContext
 import at.petrak.hexcasting.api.spell.mishaps.MishapBadOffhandItem
 import at.petrak.hexcasting.xplat.IXplatAbstractions
+import com.walksanator.ritualhex.potion.ModEffects.SoulSafety
 import net.minecraft.server.level.ServerPlayer
 import net.minecraftforge.server.ServerLifecycleHooks
-import org.apache.logging.log4j.LogManager
 import kotlin.random.Random
 
 object OpViolation : SpellOperator {
@@ -20,14 +17,24 @@ object OpViolation : SpellOperator {
         args: List<SpellDatum<*>>,
         ctx: CastingContext
     ): Triple<RenderedSpell, Int, List<ParticleSpray>> {
-        val logger = LogManager.getLogger("ritualhex")
 
         val pl = ServerLifecycleHooks.getCurrentServer().playerList
-        val players: List<ServerPlayer> = pl.players
+        val allPlayers: List<ServerPlayer> = pl.players
+        val players: MutableList<ServerPlayer> = mutableListOf()
+
+        for (player in allPlayers) {
+            if (!player.hasEffect(SoulSafety.get())) {
+                players.add(player)
+            }
+        }
         val numPlayers = players.count()
-        val rand = Random.nextInt(0,numPlayers)
-        val poorSchmuck = players[rand]
-        val datum = SpellDatum.make(poorSchmuck)
+        val datum = if (numPlayers > 0) {
+            val rand = Random.nextInt(0, numPlayers)
+            val poorSchmuck = players[rand]
+            SpellDatum.make(poorSchmuck)
+        } else {
+            SpellDatum.make(Widget.NULL)
+        }
         val (handStack, hand) = ctx.getHeldItemToOperateOn {
             val datumHolder = IXplatAbstractions.INSTANCE.findDataHolder(it)
 

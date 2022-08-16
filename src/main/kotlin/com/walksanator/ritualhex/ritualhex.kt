@@ -13,6 +13,8 @@ import thedarkcolour.kotlinforforge.forge.runForDist
 
 import com.walksanator.ritualhex.hexes.HexRegister
 
+import com.walksanator.ritualhex.potion.ModEffects
+
 /**
  * Main mod class. Should be an `object` declaration annotated with `@Mod`.
  * The modid should be declared in this object and should match the modId entry
@@ -29,6 +31,9 @@ object RitualHex {
 
     init {
         LOGGER.log(Level.INFO, "Hello world!")
+
+        ModEffects.register(MOD_BUS)
+
         val obj = runForDist(
             clientTarget = {
                 MOD_BUS.addListener(RitualHex::onClientSetup)
@@ -40,6 +45,7 @@ object RitualHex {
             })
         println(obj)
         MOD_BUS.addListener(RitualHex::onCommonSetup)
+
     }
 
     /**
