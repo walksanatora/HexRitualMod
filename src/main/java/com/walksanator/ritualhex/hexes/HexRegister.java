@@ -36,6 +36,10 @@ public class HexRegister {
                     new OpPotionEffect(SoulSafety.get(), ManaConstants.SHARD_UNIT*15,false,true,true),
                     true
             );
+            //TODO: Implement missing nadirs/zeniths
+            //TODO: Missing zeniths: Speed,Invisibility,Jump Boost,Fire Resistance,Water Breathing,Saturation,Luck,Slow falling,Conduit Power,Dolphins Grace,Hero Of The Village?
+            //TODO: Missing nadirs: Slowness,Glowing,Mining Fatigue,Nausea,Hunger,,Bad Luck,Bad Omen
+
         } catch (PatternRegistry.RegisterPatternException exn) {
             exn.printStackTrace();
         }
