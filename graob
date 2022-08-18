@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+tmp=$(mktemp)
+
+#GRAdle Offline Build
+
+curl --request GET -sL \
+     --url 'https://maven.minecraftforge.net'\
+     --output "$tmp"
+
+if test "$?" != "0" ;then
+  echo "offline,args: $@"
+  ./gradlew $@ --offline
+else
+  if cat "$tmp" | grep -i "blocked"; then
+    echo "offline,args: $@"
+    ./gradlew $@ --offline
+
+  else
+    echo "online,args: $@"
+    ./gradlew $@
+  fi
+fi
