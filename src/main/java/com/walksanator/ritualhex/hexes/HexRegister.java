@@ -1,15 +1,15 @@
 package com.walksanator.ritualhex.hexes;
 
+import at.petrak.hexcasting.api.PatternRegistry;
 import at.petrak.hexcasting.api.misc.ManaConstants;
+import at.petrak.hexcasting.api.spell.math.HexDir;
+import at.petrak.hexcasting.api.spell.math.HexPattern;
 import at.petrak.hexcasting.common.casting.operators.spells.OpPotionEffect;
 import com.walksanator.ritualhex.hexes.glpyhs.*;
-import at.petrak.hexcasting.api.PatternRegistry;
-import at.petrak.hexcasting.api.spell.math.HexPattern;
-import at.petrak.hexcasting.api.spell.math.HexDir;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.effect.MobEffects;
 
 import static com.walksanator.ritualhex.potion.ModEffects.SoulSafety;
-import net.minecraft.resources.ResourceLocation;
 
 public class HexRegister {
     public static void registerPatterns() {

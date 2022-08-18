@@ -2,11 +2,9 @@ package com.walksanator.ritualhex.items
 
 import at.petrak.hexcasting.api.item.ManaHolderItem
 import at.petrak.hexcasting.api.misc.ManaConstants
+import net.minecraft.nbt.CompoundTag
 import net.minecraft.world.item.Item
 import net.minecraft.world.item.ItemStack
-import net.minecraft.nbt.CompoundTag
-
-import com.walksanator.ritualhex.RitualHex
 
 //It is called Iolite
 class DeepBattery(Props: Properties) : Item(Props),ManaHolderItem {
