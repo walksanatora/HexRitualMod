@@ -4,7 +4,6 @@ import com.walksanator.ritualhex.RitualHex;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
-import com.walksanator.ritualhex.items.DeepBattery;
 import net.minecraftforge.registries.RegistryObject;
 
 import static net.minecraftforge.registries.ForgeRegistries.ITEMS;
