@@ -38,7 +38,7 @@ public class HexRegister {
                     true
             );
             //TODO: Implement missing nadirs/zeniths
-            //TODO: Missing zeniths: Fire Resistance,Water Breathing,Saturation,Luck,Slow falling,Conduit Power,Dolphins Grace,Hero Of The Village?
+            //TODO: Missing zeniths: ,Water Breathing,Saturation,Luck,Slow falling,Conduit Power,Dolphins Grace,Hero Of The Village?
             //TODO: Missing nadirs: Glowing,Mining Fatigue,Nausea,Hunger,Bad Luck,Bad Omen
             //HexPattern(EAST qqqqqeawawa), Speed zenith
             PatternRegistry.mapPattern(
@@ -59,6 +59,13 @@ public class HexRegister {
                     HexPattern.fromAngles("waqaaqqqqedwdwd",HexDir.NORTH_EAST),
                     new ResourceLocation("ritualhex","potion/jump_boost"),
                     new OpPotionEffect(MobEffects.JUMP,ManaConstants.CRYSTAL_UNIT,true,true,true),
+                    true
+            );
+            //HexPattern(North_East dedaqqqq), Fire resistance zenith
+            PatternRegistry.mapPattern(
+                    HexPattern.fromAngles("dedaqqqq",HexDir.NORTH_EAST),
+                    new ResourceLocation("ritualhex","potion/fire_resistance"),
+                    new OpPotionEffect(MobEffects.FIRE_RESISTANCE,ManaConstants.CRYSTAL_UNIT*2,false,false,true),
                     true
             );
         } catch (PatternRegistry.RegisterPatternException exn) {
