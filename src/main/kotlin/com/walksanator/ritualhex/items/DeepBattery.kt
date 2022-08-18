@@ -5,7 +5,8 @@ import at.petrak.hexcasting.api.misc.ManaConstants
 import net.minecraft.world.item.Item
 import net.minecraft.world.item.ItemStack
 import net.minecraft.nbt.CompoundTag
-import kotlin.math.floor
+
+import com.walksanator.ritualhex.RitualHex
 
 //It is called Iolite
 class DeepBattery(Props: Properties) : Item(Props),ManaHolderItem {
@@ -15,13 +16,10 @@ class DeepBattery(Props: Properties) : Item(Props),ManaHolderItem {
         val chargedCount = if (stack.hasTag()){
             stack.tag!!.getInt("ritualhex.chargedCount")
         } else { 0 }
-        val manaRemainder = if (stack.hasTag()){
-            stack.tag!!.getInt("ritualhex.manaRemainder")
-        } else { 0 }
 
         //check if the amount of media in just the shards is greater than the Integer limit (it will loop over)
         return if (chargedCount < Int.MAX_VALUE) {
-            0
+            1
         } else {
             Int.MAX_VALUE
         }
@@ -43,14 +41,13 @@ class DeepBattery(Props: Properties) : Item(Props),ManaHolderItem {
         } else { 0 }
 
         //get the remainder of charged amethyst and the number of charged stored
-        val remainder: Int = (mediaAmmount % ManaConstants.SHARD_UNIT)
-        val charged: Int =  floor(mediaAmmount.toDouble() / ManaConstants.SHARD_UNIT).toInt()
+        val remainder: Int = (mediaAmmount % ManaConstants.CRYSTAL_UNIT)
+        val charged: Int =  (mediaAmmount.toDouble() / ManaConstants.CRYSTAL_UNIT).toInt()
 
         //see if we had to get any more charged by converting up
-        val convertUp = floor(remainder.toDouble() / ManaConstants.SHARD_UNIT).toInt()
-        val realRemainder = (remainder % ManaConstants.SHARD_UNIT)
+        val convertUp = (remainder.toDouble() / ManaConstants.CRYSTAL_UNIT).toInt()
+        val realRemainder = (remainder % ManaConstants.CRYSTAL_UNIT)
 
-        //combine old and new values
         val newRemainder = realRemainder + manaRemainder
         val newCharged = charged + chargedCount + convertUp
 
@@ -91,11 +88,11 @@ class DeepBattery(Props: Properties) : Item(Props),ManaHolderItem {
         } else { 0 }
 
         //check if the amount of media in just the shards is greater than the Integer limit (it will loop over)
-        val mp = if (chargedCount > (cost/ManaConstants.SHARD_UNIT) ) {
+        val mp = if (chargedCount > (cost/ManaConstants.CRYSTAL_UNIT) ) {
                 cost
         } else {
-            if ((chargedCount*ManaConstants.SHARD_UNIT) + manaRemainder < cost) {
-                (chargedCount*ManaConstants.SHARD_UNIT) + manaRemainder
+            if ((chargedCount*ManaConstants.CRYSTAL_UNIT) + manaRemainder < cost) {
+                (chargedCount*ManaConstants.CRYSTAL_UNIT) + manaRemainder
             } else {
                 cost
             }
@@ -108,13 +105,13 @@ class DeepBattery(Props: Properties) : Item(Props),ManaHolderItem {
             newRemainder = manaRemainder - mp
             newCharged = chargedCount
         } else {
-            val chargedConsumed = floor(mp.toDouble()/ManaConstants.SHARD_UNIT).toInt()
+            val chargedConsumed = (mp.toDouble()/ManaConstants.CRYSTAL_UNIT).toInt()
             newCharged = chargedCount - chargedConsumed
-            if (manaRemainder > (mp % ManaConstants.SHARD_UNIT)) {
-                newRemainder = manaRemainder - (mp % ManaConstants.SHARD_UNIT)
+            if (manaRemainder > (mp % ManaConstants.CRYSTAL_UNIT)) {
+                newRemainder = manaRemainder - (mp % ManaConstants.CRYSTAL_UNIT)
             } else {
                 newCharged -= 1
-                newRemainder = manaRemainder - (mp % ManaConstants.SHARD_UNIT) + ManaConstants.SHARD_UNIT
+                newRemainder = manaRemainder - (mp % ManaConstants.CRYSTAL_UNIT) + ManaConstants.CRYSTAL_UNIT
             }
         }
 
@@ -122,8 +119,10 @@ class DeepBattery(Props: Properties) : Item(Props),ManaHolderItem {
             stack.tag = CompoundTag()
         }
 
-        stack.tag!!.putInt("ritualhex.chargedCount",newCharged)
-        stack.tag!!.putInt("ritualhex.manaRemainder",newRemainder)
+        if (!simulate) {
+            stack.tag!!.putInt("ritualhex.chargedCount", newCharged)
+            stack.tag!!.putInt("ritualhex.manaRemainder", newRemainder)
+        }
         return mp
     }
 
