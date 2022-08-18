@@ -1,0 +1,23 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "CGC",
+    "GIG",
+    "CGC"
+  ],
+  "key": {
+    "C": {
+      "tag": "forge:glass"
+    },
+    "G": {
+      "tag": "forge:ingots/gold"
+    },
+    "I": {
+      "item":"hexcasting:impetus_rightclick"
+    }
+  },
+  "result": {
+    "count": 1,
+    "item": "ritualhex:deep_battery"
+  }
+}
