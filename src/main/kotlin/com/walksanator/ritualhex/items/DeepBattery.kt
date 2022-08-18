@@ -20,10 +20,10 @@ class DeepBattery(Props: Properties) : Item(Props),ManaHolderItem {
         } else { 0 }
 
         //check if the amount of media in just the shards is greater than the Integer limit (it will loop over)
-        return if (chargedCount*ManaConstants.SHARD_UNIT < ManaConstants.SHARD_UNIT) {
+        return if (chargedCount < Int.MAX_VALUE) {
             0
         } else {
-            (chargedCount * ManaConstants.SHARD_UNIT) + manaRemainder
+            Int.MAX_VALUE
         }
     }
 
@@ -31,6 +31,7 @@ class DeepBattery(Props: Properties) : Item(Props),ManaHolderItem {
     override fun getMaxMana(items: ItemStack?): Int {
         return Int.MAX_VALUE
     }
+
     //take the p1 as the amount of mana extracted (which can be ~2k charged amethyst), and save that to our nbt
     //as a number of charged we have, and the remainder of mana that cannot be put into a single charged
     override fun setMana(stack: ItemStack, mediaAmmount: Int) {
@@ -90,25 +91,40 @@ class DeepBattery(Props: Properties) : Item(Props),ManaHolderItem {
         } else { 0 }
 
         //check if the amount of media in just the shards is greater than the Integer limit (it will loop over)
-        val mp = if (chargedCount*ManaConstants.SHARD_UNIT < ManaConstants.SHARD_UNIT) {
-            //check if we have no charged since that can also cause it to be less than one shard
-            if (chargedCount == 0) {
-                //if so we return just the remainder (which could be zero)
-                manaRemainder
+        val mp = if (chargedCount > (cost/ManaConstants.SHARD_UNIT) ) {
+                cost
+        } else {
+            if ((chargedCount*ManaConstants.SHARD_UNIT) + manaRemainder < cost) {
+                (chargedCount*ManaConstants.SHARD_UNIT) + manaRemainder
             } else {
-                //otherwise we return the maximum int value
-                Int.MAX_VALUE
+                cost
             }
-        } else {
-            (chargedCount * ManaConstants.SHARD_UNIT) + manaRemainder
         }
-        if (mp < cost) {
-            stack.tag!!.putInt("ritualhex.chargedCount",0)
-            stack.tag!!.putInt("ritualhex.manaRemainder",0)
-            return mp
+
+        val newRemainder: Int
+        var newCharged: Int
+
+        if (manaRemainder >= mp) {
+            newRemainder = manaRemainder - mp
+            newCharged = chargedCount
         } else {
-            return 0
+            val chargedConsumed = floor(mp.toDouble()/ManaConstants.SHARD_UNIT).toInt()
+            newCharged = chargedCount - chargedConsumed
+            if (manaRemainder > (mp % ManaConstants.SHARD_UNIT)) {
+                newRemainder = manaRemainder - (mp % ManaConstants.SHARD_UNIT)
+            } else {
+                newCharged -= 1
+                newRemainder = manaRemainder - (mp % ManaConstants.SHARD_UNIT) + ManaConstants.SHARD_UNIT
+            }
         }
+
+        if (!stack.hasTag()) {
+            stack.tag = CompoundTag()
+        }
+
+        stack.tag!!.putInt("ritualhex.chargedCount",newCharged)
+        stack.tag!!.putInt("ritualhex.manaRemainder",newRemainder)
+        return mp
     }
 
     //it is SHINY

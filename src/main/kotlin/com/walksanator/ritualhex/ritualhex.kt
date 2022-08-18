@@ -14,6 +14,9 @@ import thedarkcolour.kotlinforforge.forge.runForDist
 import com.walksanator.ritualhex.hexes.HexRegister
 
 import com.walksanator.ritualhex.potion.ModEffects
+import com.walksanator.ritualhex.items.ItemRegister
+import net.minecraftforge.eventbus.api.IEventBus
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext
 
 /**
  * Main mod class. Should be an `object` declaration annotated with `@Mod`.
@@ -45,7 +48,12 @@ object RitualHex {
             })
         println(obj)
         MOD_BUS.addListener(RitualHex::onCommonSetup)
+        FMLJavaModLoadingContext.get().modEventBus.addListener(this::evBusSetup)
 
+    }
+
+    private fun evBusSetup(evBus: IEventBus) {
+        ItemRegister.register(evBus)
     }
 
     /**
