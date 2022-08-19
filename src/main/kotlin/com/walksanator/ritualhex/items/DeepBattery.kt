@@ -23,12 +23,6 @@ class DeepBattery(Props: Properties) : Item(Props),ManaHolderItem {
         return Int.MAX_VALUE
     }
 
-    //take the p1 as the amount of mana extracted (which can be ~2k charged amethyst), and save that to our nbt
-    //as a number of charged we have, and the remainder of mana that cannot be put into a single charged
-    override fun setMana(stack: ItemStack, mediaAmmount: Int) {
-        stack.putLong("ritualhex.media",mediaAmmount.toLong())
-    }
-
     //returns true
     override fun manaProvider(stack: ItemStack): Boolean {
         return true
@@ -37,6 +31,22 @@ class DeepBattery(Props: Properties) : Item(Props),ManaHolderItem {
     //return true
     override fun canRecharge(stack: ItemStack?): Boolean {
         return true
+    }
+
+    //as a number of charged we have, and the remainder of mana that cannot be put into a single charged
+    override fun setMana(stack: ItemStack, mediaAmmount: Int) {
+        stack.putLong("ritualhex.media",mediaAmmount.toLong())
+    }
+
+    override fun insertMana(stack: ItemStack?, amount: Int, simulate: Boolean): Int {
+        val mp = stack!!.getLong("ritualhex.media")
+        val taken = if ((amount.toLong()+mp)<mp) {
+            long.MAX_VALUE - mp
+        } else {
+            amount.toLong()
+        }
+        if (!simulate){stack.putLong("ritualhex.media",mp+taken)}
+        return amount - taken.toInt()
     }
 
     //takes a stack (containing this item), the cost we are extracting, and a flag on if we are just kidding
