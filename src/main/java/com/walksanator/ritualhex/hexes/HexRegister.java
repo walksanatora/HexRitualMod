@@ -71,13 +71,13 @@ public class HexRegister {
             //HexPattern(SOUTH_WEST qqaw)
             PatternRegistry.mapPattern(
                     HexPattern.fromAngles("qqaw",HexDir.SOUTH_EAST),
-                    new ResourceLocation("ritualhex","page/left"),
+                    new ResourceLocation("ritualhex","page/right"),
                     new OpPageTurn(true),false
             );
             //HexPattern(SOUTH_EAST wdee)
             PatternRegistry.mapPattern(
                     HexPattern.fromAngles("wdee",HexDir.SOUTH_EAST),
-                    new ResourceLocation("ritualhex","page/right"),
+                    new ResourceLocation("ritualhex","page/left"),
                     new OpPageTurn(false), false
             );
         } catch (PatternRegistry.RegisterPatternException exn) {

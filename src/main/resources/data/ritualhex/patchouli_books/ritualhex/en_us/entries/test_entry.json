@@ -1,0 +1,15 @@
+{
+  "name": "Test Entry",
+  "icon": "minecraft:writable_book",
+  "category": "ritualhex:test",
+  "pages": [
+    {
+      "type": "hexmod:pattern",
+      "op_id": "ritualhex:page/right",
+      "anchor": "ritualhex:page/right",
+      "input": "",
+      "output": "any",
+      "text": "increases the page you are looking at by one"
+    }
+  ]
+}

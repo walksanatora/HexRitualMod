@@ -11,7 +11,7 @@ import at.petrak.hexcasting.common.items.ItemSpellbook
 
 
 class OpPageTurn(
-        private val rotateLeft: Boolean
+        private val rotateRight: Boolean
     ) : ConstManaOperator {
     override val argc = 0
     override val isGreat = false
@@ -23,9 +23,9 @@ class OpPageTurn(
         }
 
         if (handStack.`is`(HexItems.SPELLBOOK.asItem())) {
-            ItemSpellbook.RotatePageIdx(handStack,rotateLeft)
+            ItemSpellbook.RotatePageIdx(handStack,rotateRight)
         } else {
-            throw MishapBadOffhandItem(handStack,hand,TextComponent("expected Spell book"))
+            throw MishapBadOffhandItem(handStack,hand,TextComponent("Spellbook"))
         }
 
         return listOf()
