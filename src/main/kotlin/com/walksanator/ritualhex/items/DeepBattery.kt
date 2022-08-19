@@ -26,7 +26,7 @@ class DeepBattery(Props: Properties) : Item(Props),ManaHolderItem {
     }
 
     //always return Int.MAX_VALUE that way it can get as much media as possible
-    override fun getMaxMana(items: ItemStack?): Int {
+    override fun getMaxMana(items: ItemStack): Int {
         return Int.MAX_VALUE
     }
 
@@ -36,7 +36,7 @@ class DeepBattery(Props: Properties) : Item(Props),ManaHolderItem {
     }
 
     //return true
-    override fun canRecharge(stack: ItemStack?): Boolean {
+    override fun canRecharge(stack: ItemStack): Boolean {
         return true
     }
 
@@ -45,9 +45,9 @@ class DeepBattery(Props: Properties) : Item(Props),ManaHolderItem {
         stack.putLong("ritualhex.media",mediaAmmount.toLong())
     }
 
-    override fun insertMana(stack: ItemStack?, amount: Int, simulate: Boolean): Int {
-        if (amount<0){if (!simulate){stack!!.putLong("ritualhex.media",Long.MAX_VALUE)};return amount}
-        val mp = stack!!.getLong("ritualhex.media")
+    override fun insertMana(stack: ItemStack, amount: Int, simulate: Boolean): Int {
+        if (amount<0){if (!simulate){stack.putLong("ritualhex.media",Long.MAX_VALUE)};return amount}
+        val mp = stack.getLong("ritualhex.media")
         val taken = if ((amount.toLong()+mp)<mp) {
             Long.MAX_VALUE - mp
         } else {

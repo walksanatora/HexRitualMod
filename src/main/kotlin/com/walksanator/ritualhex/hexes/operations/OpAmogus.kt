@@ -1,4 +1,4 @@
-package com.walksanator.ritualhex.hexes.glpyhs
+package com.walksanator.ritualhex.hexes.operations
 
 import at.petrak.hexcasting.api.spell.ParticleSpray
 import at.petrak.hexcasting.api.spell.RenderedSpell

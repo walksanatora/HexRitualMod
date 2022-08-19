@@ -5,7 +5,7 @@ import at.petrak.hexcasting.api.misc.ManaConstants;
 import at.petrak.hexcasting.api.spell.math.HexDir;
 import at.petrak.hexcasting.api.spell.math.HexPattern;
 import at.petrak.hexcasting.common.casting.operators.spells.OpPotionEffect;
-import com.walksanator.ritualhex.hexes.glpyhs.*;
+import com.walksanator.ritualhex.hexes.operations.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.effect.MobEffects;
 
