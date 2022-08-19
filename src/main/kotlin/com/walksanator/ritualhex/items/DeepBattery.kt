@@ -1,8 +1,6 @@
 package com.walksanator.ritualhex.items
 
 import at.petrak.hexcasting.api.item.ManaHolderItem
-import at.petrak.hexcasting.api.misc.ManaConstants
-import net.minecraft.nbt.CompoundTag
 import net.minecraft.world.item.Item
 import net.minecraft.world.item.ItemStack
 import at.petrak.hexcasting.api.utils.*
@@ -39,9 +37,10 @@ class DeepBattery(Props: Properties) : Item(Props),ManaHolderItem {
     }
 
     override fun insertMana(stack: ItemStack?, amount: Int, simulate: Boolean): Int {
+        if (amount<0){if (!simulate){stack!!.putLong("ritualhex.media",Long.MAX_VALUE)};return amount}
         val mp = stack!!.getLong("ritualhex.media")
         val taken = if ((amount.toLong()+mp)<mp) {
-            long.MAX_VALUE - mp
+            Long.MAX_VALUE - mp
         } else {
             amount.toLong()
         }
@@ -53,14 +52,20 @@ class DeepBattery(Props: Properties) : Item(Props),ManaHolderItem {
     override fun withdrawMana(stack: ItemStack, cost: Int, simulate: Boolean): Int {
         val mp = stack.getLong("ritualhex.media")
 
-        return if (mp >= cost){
+        if (cost < 0) {
+            if (!simulate) {stack.putLong("ritualhex.media",0L)}
+            return mp.coerceIn(0L,Int.MAX_VALUE.toLong()).toInt()
+        }
+
+        val r = if (mp >= cost){
             val nmp = mp - cost.toLong()
             if (!simulate) {stack.putLong("ritualhex.media",nmp)}
             cost
         } else {
             if (!simulate) {stack.putLong("ritualhex.media",0)}
-            mp.toInt()
+            mp.coerceIn(0L,Int.MAX_VALUE.toLong()).toInt()
         }
+        return r
     }
 
     //it is SHINY
