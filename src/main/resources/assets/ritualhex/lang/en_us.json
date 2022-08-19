@@ -4,5 +4,9 @@
 
   "hexcasting.spell.ritualhex:amogus": "Greater Amogus",
   "hexcasting.spell.ritualhex:soul_violation": "Greater Identity Theft",
-  "hexcasting.spell.ritualhex:soul_protection": "Orange Sun's Zenith",
+  "hexcasting.spell.ritualhex:potion/speed": "Yellow Sun's zenith",
+  "hexcasting.spell.ritualhex:potion/jump_boost": "Lime Sun's zenith",
+  "hexcasting.spell.ritualhex:potion/invisibility": "Clear Sun's zenith",
+  "hexcasting.spell.ritualhex:potion/fire_resistance": "Crimson Sun's zenith",
+  "hexcasting.spell.ritualhex:soul_protection": "Orange Sun's Zenith"
 }
