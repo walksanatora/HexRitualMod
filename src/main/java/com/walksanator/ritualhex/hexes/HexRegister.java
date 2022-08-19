@@ -68,6 +68,18 @@ public class HexRegister {
                     new OpPotionEffect(MobEffects.FIRE_RESISTANCE,ManaConstants.CRYSTAL_UNIT*2,false,false,true),
                     true
             );
+            //HexPattern(SOUTH_WEST qqaw)
+            PatternRegistry.mapPattern(
+                    HexPattern.fromAngles("qqaw",HexDir.SOUTH_EAST),
+                    new ResourceLocation("ritualhex","page/left"),
+                    new OpPageTurn(true),false
+            );
+            //HexPattern(SOUTH_EAST wdee)
+            PatternRegistry.mapPattern(
+                    HexPattern.fromAngles("wdee",HexDir.SOUTH_EAST),
+                    new ResourceLocation("ritualhex","page/right"),
+                    new OpPageTurn(false), false
+            );
         } catch (PatternRegistry.RegisterPatternException exn) {
             exn.printStackTrace();
         }
