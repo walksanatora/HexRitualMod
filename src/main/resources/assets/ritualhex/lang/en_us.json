@@ -1,6 +1,8 @@
 {
   "effect.ritualhex.privacy": "True Name Protection",
+  "item.ritualhex.deep_battery": "Media Singularity",
+
   "hexcasting.spell.ritualhex:amogus": "Greater Amogus",
   "hexcasting.spell.ritualhex:soul_violation": "Greater Identity Theft",
-  "hexcasting.spell.ritualhex:soul_protection": "Orange Sun's Zenith"
+  "hexcasting.spell.ritualhex:soul_protection": "Orange Sun's Zenith",
 }

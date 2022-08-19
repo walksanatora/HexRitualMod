@@ -4,9 +4,18 @@ import at.petrak.hexcasting.api.item.ManaHolderItem
 import net.minecraft.world.item.Item
 import net.minecraft.world.item.ItemStack
 import at.petrak.hexcasting.api.utils.*
+import net.minecraft.network.chat.Component
+import net.minecraft.network.chat.TextComponent
+import net.minecraft.world.item.TooltipFlag
+import net.minecraft.world.level.Level
+import java.text.NumberFormat
+import java.util.Locale
 
 //It is called Iolite
 class DeepBattery(Props: Properties) : Item(Props),ManaHolderItem {
+
+    private val fmt = NumberFormat
+        .getCompactNumberInstance(Locale.US, NumberFormat.Style.SHORT)
 
     //return 0 if not full, Int.MAX_VALUE if full, that way we can suck out the mose mana from an item stack
     override fun getMana(stack: ItemStack) : Int {
@@ -70,8 +79,22 @@ class DeepBattery(Props: Properties) : Item(Props),ManaHolderItem {
 
     //it is SHINY
     override fun isFoil(stack: ItemStack): Boolean {
-        return true
+        return stack.getLong("ritualhex.media") > 0
     }
 
+    override fun appendHoverText(
+        stack: ItemStack,
+        world: Level?,
+        componets: MutableList<Component>,
+        flag: TooltipFlag
+    ) {
+        val mp = if (flag.isAdvanced) {
+            "Media: " + stack.getLong("ritualhex.media").toString()
+        } else {
+            "Media: " + fmt.format(stack.getLong("ritualhex.media"))
+        }
+        componets.add(TextComponent(mp))
+        super.appendHoverText(stack,world,componets,flag)
+    }
 }
 
